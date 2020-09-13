@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="AdminDAO">
+
+	<resultMap type="admin" id="adminResult">
+		<id property="adminTbNo" column="ADMIN_TB_NO" />
+		<result property="adminTbId" column="ADMIN_TB_ID" />
+		<result property="adminTbPwd" column="ADMIN_TB_PWD" />
+		<result property="adminTbPosition" column="ADMIN_TB_POSITION" />
+	</resultMap>
+	
+	<select id="loginCheck" resultMap="adminResult"
+		parameterType="admin">
+		<![CDATA[
+			SELECT ADMIN_TB_ID 
+			FROM ADMIN 
+			WHERE ADMIN_TB_ID = #{adminTbId} AND ADMIN_TB_PWD = #{adminTbPwd} 
+		]]>
+	</select>
+	
+	<select id="getAdmin" resultMap="adminResult"
+		parameterType="admin">
+		<![CDATA[
+			SELECT ADMIN_TB_ID, ADMIN_TB_NAME
+			FROM ADMIN
+			WHERE ADMIN_TB_ID = #{adminTbId}
+		]]>
+	</select>
+
+</mapper>

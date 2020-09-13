@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties resource="db.properties" />
+	<typeAliases>
+		<typeAlias type="com.simplerecipe.login.vo.UserVO" alias="user"></typeAlias>
+		<typeAlias type="com.simplerecipe.login.vo.AdminVO" alias="admin"></typeAlias>
+		<typeAlias type="com.simplerecipe.main.vo.RecipeVO" alias="recipe"></typeAlias>
+	</typeAliases>
+	<mappers>
+		<mapper resource="mappings/user-mapping.xml" />
+		<mapper resource="mappings/admin-mapping.xml" />
+		<mapper resource="mappings/recipe-mapping.xml" />
+	</mappers>
+</configuration>

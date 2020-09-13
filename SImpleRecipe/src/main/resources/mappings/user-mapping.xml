@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserDAO">
+
+	<resultMap type="user" id="userResult">
+		<id property="userTbNo" column="USER_TB_NO" />
+		<result property="userTbName" column="USER_TB_NAME" />
+		<result property="userTbId" column="USER_TB_ID" />
+		<result property="userTbPwd" column="USER_TB_PWD" />
+		<result property="userTbGender" column="USER_TB_GENDER" />
+		<result property="userTbBirthday" column="USER_TB_BIRTHDAY" />
+		<result property="userTbEmail" column="USER_TB_EMAIL" />
+		<result property="userTbPhone" column="USER_TB_PHONE" />
+		<result property="userTbJoinDate" column="USER_TB_JOIN_DATE" />
+		<result property="userTbJoinPath" column="USER_TB_JOIN_PATH" />
+		<result property="userTbState" column="USER_TB_STATE" />
+	</resultMap>
+	
+	<select id="loginCheck" resultMap="userResult"
+		parameterType="user">
+		<![CDATA[
+			SELECT USER_TB_ID 
+			FROM USER_INFO
+			WHERE USER_TB_ID = #{userTbId} AND USER_TB_PWD = #{userTbPwd}
+		]]>
+	</select>
+	
+	<select id="getUser" resultMap="userResult"
+		parameterType="user">
+		<![CDATA[
+			SELECT USER_TB_ID, USER_TB_NAME
+			FROM USER_INFO
+			WHERE USER_TB_ID = #{userTbId}
+		]]>
+	</select>
+	
+	<select id="existUserIdCheck" resultMap="userResult"
+		parameterType="user">
+		<![CDATA[
+			SELECT USER_TB_ID AS ID 
+			FROM USER_INFO
+			WHERE USER_TB_ID = #{userTbId}
+			UNION
+			SELECT ADMIN_TB_ID AS ID
+			FROM ADMIN
+			WHERE ADMIN_TB_ID = #{userTbId}
+		]]>
+	</select>
+	
+	<insert id="insertUser" parameterType="user">
+		<![CDATA[
+			INSERT INTO USER_INFO(USER_TB_NO, USER_TB_ID, USER_TB_PWD, USER_TB_NAME, 
+			USER_TB_GENDER, USER_TB_BIRTHDAY, USER_TB_EMAIL, USER_TB_PHONE) 
+			VALUES(SEQ_USER_TB_NO.NEXTVAL, #{userTbId}, #{userTbPwd}, #{userTbName}, 
+			#{userTbGender}, #{userTbBirthday}, #{userTbEmail}, #{userTbPhone}) 
+		]]>
+	</insert>
+
+</mapper>
