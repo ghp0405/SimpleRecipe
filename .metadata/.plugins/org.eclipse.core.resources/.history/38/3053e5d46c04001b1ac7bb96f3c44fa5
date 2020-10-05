@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="logImpl" value="LOG4J"></setting>
+	</settings>
+	<properties resource="db.properties" />
+	<typeAliases>
+		<typeAlias type="com.simplerecipe.login.vo.UserVO" alias="user"></typeAlias>
+		<typeAlias type="com.simplerecipe.admin.vo.UserVO" alias="usermgt"></typeAlias>
+		<typeAlias type="com.simplerecipe.login.vo.AdminVO" alias="admin"></typeAlias>
+		<typeAlias type="com.simplerecipe.main.vo.RecipeVO" alias="recipe"></typeAlias>
+		<typeAlias type="com.simplerecipe.main.vo.IngredientListVO" alias="ingredientList"></typeAlias>
+		<typeAlias type="com.simplerecipe.main.vo.IngredientVO" alias="ingredient"></typeAlias>
+		<typeAlias type="com.simplerecipe.notice.vo.NoticeVO" alias="notice"></typeAlias>
+		<typeAlias type="com.simplerecipe.qna.vo.QnAVO" alias="qna"></typeAlias>
+	</typeAliases>
+	<mappers>
+		<mapper resource="mappings/user-mapping.xml" />
+		<mapper resource="mappings/usermgt-mapping.xml" />
+		<mapper resource="mappings/admin-mapping.xml" />
+		<mapper resource="mappings/recipe-mapping.xml" />
+		<mapper resource="mappings/ingredientlist-mapping.xml" />
+		<mapper resource="mappings/ingredient-mapping.xml" />
+		<mapper resource="mappings/notice-mapping.xml" />
+		<mapper resource="mappings/qna-mapping.xml" />
+	</mappers>
+</configuration>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserMgtDAO">
+
+	<resultMap type="usermgt" id="usermgtResult">
+		<id property="userTbNo" column="USER_TB_NO" />
+		<result property="userTbName" column="USER_TB_NAME" />
+		<result property="userTbId" column="USER_TB_ID" />
+		<result property="userTbPwd" column="USER_TB_PWD" />
+		<result property="userTbGender" column="USER_TB_GENDER" />
+		<result property="userTbBirthday" column="USER_TB_BIRTHDAY" />
+		<result property="userTbEmail" column="USER_TB_EMAIL" />
+		<result property="userTbPhone" column="USER_TB_PHONE" />
+		<result property="userTbJoinDate" column="USER_TB_JOIN_DATE" />
+		<result property="userTbJoinPath" column="USER_TB_JOIN_PATH" />
+		<result property="userTbState" column="USER_TB_STATE" />
+	</resultMap>
+	
+	<delete id="deleteUser" parameterType="usermgt">
+		<![CDATA[
+			DELETE FROM USER_INFO
+			WHERE USER_TB_NO = #{userTbNo}
+		]]> 
+	</delete>
+	
+	<select id="getUserList" resultMap="usermgtResult"
+		parameterType="usermgt">
+		SELECT *
+		FROM USER_INFO 
+	</select>
+
+</mapper>

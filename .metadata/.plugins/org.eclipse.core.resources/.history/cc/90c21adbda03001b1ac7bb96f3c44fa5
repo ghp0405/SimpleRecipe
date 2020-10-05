@@ -1,0 +1,5 @@
+package com.simplerecipe.common.logger;
+
+public class LoggerAspect {
+
+}

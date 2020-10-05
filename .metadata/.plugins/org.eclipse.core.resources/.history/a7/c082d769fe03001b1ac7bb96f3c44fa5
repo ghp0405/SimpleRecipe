@@ -1,0 +1,5 @@
+package com.simplerecipe.common.aop;
+
+public class LogAdvice {
+
+}

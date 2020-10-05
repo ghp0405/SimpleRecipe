@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="RecipeDAO">
+	<resultMap type="recipe" id="recipeResult">
+		<id property="recipeTbNo" column="RECIPE_TB_NO" />
+		<result property="userTbNo" column="USER_TB_NO" />
+		<result property="recipeTbTitle" column="RECIPE_TB_TITLE" />
+		<result property="recipeTbContentLink" column="RECIPE_TB_CONTENT_LINK" />
+		<result property="recipeTbImageLink" column="RECIPE_TB_IMAGE_LINK" />
+	</resultMap>
+	
+	<!-- map으로 가져온 ings는 아래와 같이 collection란에 그대로 써줘야 정상 작동한다!!! -->
+	<sql id="subSearch1">
+	 	SELECT RECIPE_TB_NO, COUNT(RECIPE_TB_NO) AS CNT
+		FROM INGREDIENT_LIST NATURAL JOIN INGREDIENT
+		WHERE INGREDIENT_TB_NAME IN 
+			<foreach item="ing" collection="ings" open="(" close=")" separator=",">
+				#{ing}
+			</foreach>
+		GROUP BY RECIPE_TB_NO
+	</sql>
+	
+	<sql id="subSearch2">
+		SELECT RECIPE_TB_NO, USER_TB_NO, RECIPE_TB_TITLE, 
+		RECIPE_TB_CONTENT_LINK, RECIPE_TB_IMAGE_LINK, RE2.CNT AS CNT 
+  		FROM RECIPE RE1 NATURAL JOIN 
+  			(<include refid="subSearch1">
+				<property name="ings" value="#{ings}" />
+			</include>) RE2
+  		ORDER BY CNT DESC
+	</sql>
+	
+	<sql id="subSearch3">
+		SELECT RECIPE_TB_NO, USER_TB_NO, RECIPE_TB_TITLE, 
+		RECIPE_TB_CONTENT_LINK, RECIPE_TB_IMAGE_LINK, CNT, ROWNUM AS RNUM
+		FROM (<include refid="subSearch2">
+				<property name="ings" value="#{ings}" />
+			</include>)
+	</sql>
+
+	<select id="searchRecipe" resultMap="recipeResult"
+		parameterType="java.util.Map">
+		SELECT * 
+		FROM (<include refid="subSearch3">
+				<property name="ings" value="#{ings}" />
+			</include>) RE4
+		WHERE RNUM BETWEEN #{startNum} AND #{endNum} 
+	</select>
+
+	<select id="getDetail" resultMap="recipeResult"
+		parameterType="recipe">
+			<![CDATA[
+				SELECT *
+				FROM RECIPE
+				WHERE RECIPE_TB_NO = #{recipeTbNo}
+			]]>
+	</select>
+	
+	<select id="getResultCount" resultType="int"
+		parameterType="list">
+		SELECT COUNT(*) 
+		FROM (<include refid="subSearch1">
+				<property name="ings" value="#{ings}" />
+			</include>)
+	</select>
+	
+	<select id="getRecipeMaxCount" resultType="String">
+		SELECT MAX(RECIPE_TB_NO)
+		FROM RECIPE 
+	</select>
+	
+	<insert id="insertRecipe" parameterType="recipe">
+		INSERT INTO RECIPE(RECIPE_TB_NO, USER_TB_NO, 
+		RECIPE_TB_TITLE, RECIPE_TB_CONTENT_LINK, RECIPE_TB_IMAGE_LINK) 
+		VALUES(SEQ_RECIPE_TB_NO.NEXTVAL, #{userTbNo},
+		#{recipeTbTitle}, #{recipeTbContentLink}, #{recipeTbImageLink})
+	</insert>
+	
+	<select id="getMyRecipeList" resultMap="recipeResult"
+		parameterType="int">
+		SELECT RECIPE_TB_NO, USER_TB_NO, RECIPE_TB_TITLE, 
+			RECIPE_TB_CONTENT_LINK, RECIPE_TB_IMAGE_LINK
+		FROM RECIPE
+		WHERE USER_TB_NO = #{userTbNo}
+	</select>
+	
+	<delete id="deleteRecipe" parameterType="recipe">
+		DELETE FROM RECIPE
+		WHERE RECIPE_TB_NO = #{recipeTbNo}
+	</delete>
+	
+</mapper>

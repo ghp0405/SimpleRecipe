@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="IngredientListDAO">
+	<resultMap type="ingredientList" id="ingredientListResult">
+		<result property="recipeTbNo" column="RECIPE_TB_NO" />
+		<result property="ingredientTbNo" column="INGREDIENT_TB_NO" />
+		<result property="ingredientListTbAmt" column="INGREDIENT_LIST_TB_AMT" />
+	</resultMap>
+	
+	<insert id="insertIngredientList" parameterType="java.util.Map">
+		INSERT INTO INGREDIENT_LIST(RECIPE_TB_NO, INGREDIENT_TB_NO, INGREDIENT_LIST_TB_AMT) 
+		VALUES(#{rno}, #{ino}, #{ingredientListTbAmt}) 
+	</insert>
+	
+	<select id="getIngredientList" parameterType="recipe"
+		resultMap="ingredientListResult">
+		SELECT RECIPE_TB_NO, INGREDIENT_TB_NO, INGREDIENT_LIST_TB_AMT
+		FROM INGREDIENT_LIST
+		WHERE RECIPE_TB_NO = #{recipeTbNo}
+	</select>
+		
+	
+</mapper>

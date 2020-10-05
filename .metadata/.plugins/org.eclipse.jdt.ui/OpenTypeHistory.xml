@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.login.dao{AdminLoginDAO.java[AdminLoginDAO" modifiers="513" timestamp="1599378120368"/>
+<typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.reg.dao{UserRegDAO.java[UserRegDAO" modifiers="513" timestamp="1599412790989"/>
+<typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.reg.service{UserRegService.java[UserRegService" modifiers="513" timestamp="1599450642872"/>
+<typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.main.dao{RecipeDAO.java[RecipeDAO" modifiers="513" timestamp="1600986103455"/>
+<typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.main.service{RecipeService.java[RecipeService" modifiers="513" timestamp="1601131409338"/>
+<typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.notice.dao{NoticeDAO.java[NoticeDAO" modifiers="513" timestamp="1600617650863"/>
+<typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.notice.service{NoticeService.java[NoticeService" modifiers="513" timestamp="1600605507427"/>
+<typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.qna.dao{QnADAO.java[QnADAO" modifiers="513" timestamp="1600691465500"/>
+<typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.qna.service{QnAService.java[QnAService" modifiers="513" timestamp="1600691746701"/>
+<typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.admin.dao{UserMgtDAO.java[UserMgtDAO" modifiers="513" timestamp="1600761196258"/>
+<typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.admin.service{UserMgtService.java[UserMgtService" modifiers="513" timestamp="1600761362551"/>
+</typeInfoHistroy>

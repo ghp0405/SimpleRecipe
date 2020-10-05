@@ -1,0 +1,17 @@
+package com.simplerecipe.common.logger;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+public class LoggerAspect {
+	protected Log log = LogFactory.getLog(LoggerAspect.class);
+	static String name = "";
+	static String type = "";
+	
+	// execution(수식어패턴 리턴타입패턴 클래스이름패턴~메서드이름패턴(파라미터패턴))
+	// execution(없음 모든타입리턴 com.~~.controller패키지내~~Controller.java클래스
+	// ~~Controller.* : 모든 함수에대해 적용, 괄호는 (모든파라미터값받음))
+	@Around("execution(* com..controller.*Controller.*(..)) or execution")
+}
