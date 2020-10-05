@@ -26,23 +26,32 @@ p {
 }
 
 .header-wrap {
+	position: relative;
 	background: #242f46;
 	box-shadow: 3px 3px 14px 3px rgba(0,0,0,0.3);
-	padding: 30px 100px;
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 20px 100px;
 	box-sizing: border-box;
 }
 
-.header-wrap ul li {
+.nav-wrap {
+	position: absolute;
+	top: 0;
+	right: 5%;
+}
+
+.nav-wrap ul li {
 	float: left;
 	list-style: none;
 	margin-left: 20px;
 }
 
-.header-wrap ul li a {
-	text-decoration: none;
+.nav-wrap ul li a {
 	color: #ff9f40;
 	text-align: center;
-	font-size: 22px;
+	font-size: 12px;
 	margin-top: 80px;
 }
 

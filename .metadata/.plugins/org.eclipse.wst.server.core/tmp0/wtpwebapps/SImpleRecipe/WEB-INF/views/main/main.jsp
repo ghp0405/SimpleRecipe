@@ -8,13 +8,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="<c:url value="/resources/css/main.css" />" >
 </head>
 <body>
-	<h1>My Simple Recipe</h1>
-	<form action="/result.do" method="get">
-		<label>검색어 입력</label>
-		<input type="text" name="keywords" />
-		<button type="submit">검색</button>
-	</form>
+<div class="main-wrap">
+	<div class="form-wrap txt-c">
+		<form action="/result.do" method="get">
+			<h1><label>Simple Recipe</label></h1>
+			<input type="text" name="keywords" class="inputTxt"/>
+			<button type="submit" class="commonBtn mt40">검색</button>
+		</form>
+	</div><%-- end form-wrap --%>
+</div><%-- end main-wrap --%>
 </body>
 </html>
