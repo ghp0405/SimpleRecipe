@@ -8,31 +8,34 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
+<link rel="stylesheet" href="<c:url value="/resources/css/detail.css" />" >
 </head>
 <body>
+<div class="detail-wrap">
 	<img src="<c:url value="${recipe.recipeTbImageLink}" />" /><br />
 	<c:set var="lineSorter" value="0" scope="page" /> 
 	<c:forEach var="line" items="${content}">
 		<c:choose>
 			<%-- line에 들어있는 문자열에 '[재료]'가 있을 경우 --%>
 			<c:when test="${fn:contains(line, '[재료]')}"> 
-				<br /><br /><span>${line}</span><br />
+				<br /><br /><span class="detail-content">${line}</span><br />
 			</c:when>
 			<c:when test="${fn:contains(line, '조리순서')}">
-				<br /><br /><span>${line}</span><br />
+				<br /><br /><span class="detail-content">${line}</span><br />
 				<c:set var="lineSorter" value="1" scope="page" />
 			</c:when>
 			<c:otherwise>
 				<c:if test="${lineSorter eq 0}">
-					<span>${line}</span>
+					<span class="detail-content">${line}</span>
 				</c:if>
 				<c:if test="${lineSorter eq 1}">
-					<span>${line}</span><br />
+					<span class="detail-content">${line}</span><br />
 				</c:if>
 			</c:otherwise>
 		</c:choose>
 	</c:forEach>
+	<%-- 뒤로가기 버튼 --%>
+	<button class="commonBtn" onclick="history.back()">검색 결과 목록 페이지로 이동</button>
 	<%-- 여기에 사용자와 작성자 NO가 서로 같을 경우, 
 	수정 및 삭제가 가능하도록 a태그가 추가로 들어와야한다. --%>
 	<c:if test="${userTbNo eq recipe.userTbNo}">
@@ -40,25 +43,25 @@
 		<a href="delete.do?recipeTbNo=${recipe.recipeTbNo}">글 삭제</a>
 	</c:if>
 	<div id="disqus_thread"></div>
-	<script>
-	
-	/**
-	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-	
-	var disqus_config = function () {
-		this.page.url = "http://localhost:8080/detail.do?recipeTbNo=${recipe.recipeTbNo}";  // Replace PAGE_URL with your page's canonical URL variable
-		this.page.identifier = "${recipe.recipeTbNo}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	
-	(function() { // DON'T EDIT BELOW THIS LINE
-		var d = document, s = d.createElement('script');
-		s.src = 'https://simplerecipe.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
+</div><%-- end detail-wrap --%>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+	this.page.url = "http://localhost:8080/detail.do?recipeTbNo=${recipe.recipeTbNo}";  // Replace PAGE_URL with your page's canonical URL variable
+	this.page.identifier = "${recipe.recipeTbNo}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+	var d = document, s = d.createElement('script');
+	s.src = 'https://simplerecipe.disqus.com/embed.js';
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>               
 </body>
 </html>

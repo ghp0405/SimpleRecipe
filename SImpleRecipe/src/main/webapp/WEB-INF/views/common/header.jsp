@@ -16,6 +16,7 @@
 				<div class="nav-wrap">
 					<ul>
 						<li><a href="logout.do">로그아웃</a></li>
+						<li><a href="main.do">메인페이지</a></li>
 						<li><a href="mypage.do">마이페이지</a></li>
 						<li><a href="getNoticeList.do">공지사항</a></li>
 						<li><a href="getQnAList.do">Q&A</a></li>
@@ -28,6 +29,7 @@
 				<div class="nav-wrap">
 					<ul>
 						<li><a href="logout.do">로그아웃</a></li>
+						<li><a href="main.do">메인페이지</a></li>
 						<li><a href="getUserList.do">사용자 관리 페이지</a></li>
 						<li><a href="getNoticeList.do">공지사항</a></li>
 						<li><a href="getQnAList.do">Q&A</a></li>
@@ -41,6 +43,7 @@
 					<ul>
 						<li><a href="login.do">로그인</a></li>
 						<li><a href="register.do">회원가입</a></li>
+						<li><a href="main.do">메인페이지</a></li>
 						<li><a href="getNoticeList.do">공지사항</a></li>
 						<li><a href="getQnAList.do">Q&A</a></li>
 					</ul>

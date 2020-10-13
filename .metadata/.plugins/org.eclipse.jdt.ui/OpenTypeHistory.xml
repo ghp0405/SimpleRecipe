@@ -11,4 +11,6 @@
 <typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.qna.service{QnAService.java[QnAService" modifiers="513" timestamp="1600691746701"/>
 <typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.admin.dao{UserMgtDAO.java[UserMgtDAO" modifiers="513" timestamp="1600761196258"/>
 <typeInfo handle="=SImpleRecipe/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.simplerecipe.admin.service{UserMgtService.java[UserMgtService" modifiers="513" timestamp="1600761362551"/>
+<typeInfo handle="=SImpleRecipe/C:\/Users\/ParkGeonHee\/.m2\/repository\/javax\/servlet\/servlet-api\/2.5\/servlet-api-2.5.jar=/maven.pomderived=/true=/=/org.eclipse.jst.component.dependency=/\/WEB-INF\/lib=/=/maven.pomderived=/true=/=/org.eclipse.jst.component.nondependency=/=/=/maven.groupId=/javax.servlet=/=/maven.artifactId=/servlet-api=/=/maven.version=/2.5=/=/maven.scope=/provided=/&lt;javax.servlet(Filter.class[Filter" modifiers="1537" timestamp="1587384150169"/>
+<typeInfo handle="=SImpleRecipe/C:\/Program Files\/Java\/jre1.8.0_241\/lib\/rt.jar=/owner.project.facets=/java=/=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.util.logging(Filter.class[Filter" modifiers="1537" timestamp="1596246079719"/>
 </typeInfoHistroy>
