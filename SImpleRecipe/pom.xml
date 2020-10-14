@@ -200,6 +200,13 @@
 			<artifactId>tiles-servlet</artifactId>
 			<version>3.0.8</version>
 		</dependency>
+		
+		<!-- lucy-xss -->
+		<dependency>
+	        <groupId>com.navercorp.lucy</groupId>
+	        <artifactId>lucy-xss-servlet</artifactId>
+	        <version>2.0.0</version>
+	    </dependency>
 
 	</dependencies>
 	<build>

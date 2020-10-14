@@ -1,31 +1,34 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<link rel="stylesheet" href="<c:url value="/resources/css/insert.css" />" >
 </head>
 <body>
-<form action="insert.do" method="post" id="recipeSaveForm"
-	encType="multipart/form-data" >
-	<input type="file" name="imgFile" placeholder="레시피 이미지를 삽입해주세요."/><br />
-	<input type="text" name="recipeTbTitle" placeholder="레시피 제목을 입력해주세요." /><br />
-	<input type="button" id="addIngreBtn" value="재료 추가" /><br />
-	<div id="addIngreWrap">
-		<div id="addIngre">
-			<input type="text" name="ingredientTbName" 
-			placeholder="재료를 입력해주세요." />
-			<input type="text" name="addIngDetail" 
-			placeholder="추가 옵션 및 설명을 입력해주세요." />
-			<input type="button" id="delIngreBtn" value="재료 삭제" /><br />
+<div class="insert-form-wrap">
+	<form action="insert.do" method="post" id="recipeSaveForm"
+		encType="multipart/form-data" accept-charset="UTF-8">
+		<input type="file" name="imgFile" placeholder="레시피 이미지를 삽입해주세요."/><br />
+		<input type="text" name="recipeTbTitle" placeholder="레시피 제목을 입력해주세요." /><br />
+		<input type="button" id="addIngreBtn" value="재료 추가" /><br />
+		<div id="addIngreWrap">
+			<div id="addIngre">
+				<input type="text" name="ingredientTbName" 
+				placeholder="재료를 입력해주세요." />
+				<input type="text" name="addIngDetail" 
+				placeholder="추가 옵션 및 설명을 입력해주세요." />
+				<input type="button" id="delIngreBtn" value="재료 삭제" /><br />
+			</div>
 		</div>
-	</div>
-	<%-- 네이버 스마트 에디터 입력란(조리순서) --%>
-	<textarea name="recipeDetail" id="contents" rows="10" cols="100" 
-	style="width:100%; height:412px; display:none;"></textarea>
-	<input type="submit" id="EditorSaveBtn" value="레시피 등록" />
-</form>
+		<%-- 네이버 스마트 에디터 입력란(조리순서) --%>
+		<textarea name="recipeDetail" id="contents" rows="10" cols="100" 
+		style="width:100%; height:412px; display:none;"></textarea>
+		<input type="submit" id="EditorSaveBtn" value="레시피 등록" />
+	</form>
+</div>
 <script>
 $(document).ready(function(){
 	

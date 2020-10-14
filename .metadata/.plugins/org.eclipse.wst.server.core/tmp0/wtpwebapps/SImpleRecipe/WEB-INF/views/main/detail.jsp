@@ -35,12 +35,12 @@
 		</c:choose>
 	</c:forEach>
 	<%-- 뒤로가기 버튼 --%>
-	<button class="commonBtn" onclick="history.back()">검색 결과 목록 페이지로 이동</button>
+	<button class="commonBtn" onclick="history.back()">이전 페이지로 이동</button>
 	<%-- 여기에 사용자와 작성자 NO가 서로 같을 경우, 
 	수정 및 삭제가 가능하도록 a태그가 추가로 들어와야한다. --%>
 	<c:if test="${userTbNo eq recipe.userTbNo}">
-		<a href="update.do?recipeTbNo=${recipe.recipeTbNo}">글 수정</a>
-		<a href="delete.do?recipeTbNo=${recipe.recipeTbNo}">글 삭제</a>
+		<a href="/update.do?recipeTbNo=${recipe.recipeTbNo}"><button class="commonBtn">글 수정</button></a>
+		<a href="/delete.do?recipeTbNo=${recipe.recipeTbNo}"><button class="commonBtn">글 삭제</button></a>
 	</c:if>
 	<div id="disqus_thread"></div>
 </div><%-- end detail-wrap --%>

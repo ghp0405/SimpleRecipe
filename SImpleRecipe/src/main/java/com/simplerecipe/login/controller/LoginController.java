@@ -4,6 +4,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.simplerecipe.login.service.LoginService;
@@ -17,7 +18,11 @@ public class LoginController {
 	private LoginService loginService;
 	
 	@RequestMapping("/login.do")
-	public String login() {
+	public String login(HttpSession session, Model model) {
+		if(session.getAttribute("loginState") == "로그인 성공")
+			return "redirect:/main.do";
+		else if(session.getAttribute("loginState") == "로그인 실패")
+			model.addAttribute("loginState", "로그인 실패");
 		return "login/login";
 	}
 	
@@ -29,6 +34,7 @@ public class LoginController {
 			session.setAttribute("userTbId", uvo.getUserTbId());
 			session.setAttribute("userTbNo", loginService.getUser(uvo).getUserTbNo());
 			session.setAttribute("userType", "일반사용자");
+			session.setAttribute("loginState", "로그인 성공");
 			return "redirect:/main.do";
 		}
 		else{ 
@@ -40,10 +46,12 @@ public class LoginController {
 				session.setAttribute("adminTbId", avo.getAdminTbId());
 				session.setAttribute("adminTbNo", loginService.getAdmin(avo).getAdminTbNo());
 				session.setAttribute("userType", "관리자");
+				session.setAttribute("loginState", "로그인 성공");
 				return "redirect:/main.do";
 			}
 			else {
 				System.out.println("로그인 실패");
+				session.setAttribute("loginState", "로그인 실패");
 				return "redirect:/login.do";
 			}
 		}
@@ -55,12 +63,14 @@ public class LoginController {
 			session.removeAttribute("userTbId");
 			session.removeAttribute("userTbNo");
 			session.removeAttribute("userType");
+			session.removeAttribute("loginState");
 		}catch(Exception e) {
 			e.printStackTrace();
 			try {
 				session.removeAttribute("adminTbId");
 				session.removeAttribute("adminTbNo");
 				session.removeAttribute("userType");
+				session.removeAttribute("loginState");
 			}catch(Exception e2) {
 				e2.printStackTrace();
 				System.out.println("로그아웃 오류");

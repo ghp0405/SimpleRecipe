@@ -2,37 +2,36 @@
 <%@ page import="com.simplerecipe.notice.vo.NoticeVO" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
+<link rel="stylesheet" href="<c:url value="/resources/css/getNotice.css" />" >
 </head>
 <body>
-<table>
-	<tr>
-		<th>제목</th>
-		<td>${notice.noticeTbTitle}</td>
-	</tr>
-	<tr>
-		<th>관리자 ID</th>
-		<td>${notice.adminTbId}</td>
-	</tr>
-	<tr>
-		<th>내용</th>
-		<td width="1024">${notice.noticeTbContent}</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="updateNotice.do?noticeTbNo=${notice.noticeTbNo}">글 수정하기</a>
-		</td>
-		<td>
-			<a href="deleteNotice.do?noticeTbNo=${notice.noticeTbNo}">글 삭제하기</a>
-		</td>
-	</tr>
-</table>
-<a href="getNoticeList.do">글 목록으로</a>
-<div id="disqus_thread"></div>
+<div class="notice-wrap">
+	<table>
+		<tr>
+			<th>제목</th>
+			<td>${notice.noticeTbTitle}</td>
+		</tr>
+		<tr>
+			<th>관리자 ID</th>
+			<td>${notice.adminTbId}</td>
+		</tr>
+		<tr>
+			<th>내용</th>
+			<td width="1024">${notice.noticeTbContent}</td>
+		</tr>
+	</table>
+	<c:if test="${userType == '관리자'}">
+		<a href="updateNotice.do?noticeTbNo=${notice.noticeTbNo}"><button class="commonBtn">수정하기</button></a>
+		<a href="deleteNotice.do?noticeTbNo=${notice.noticeTbNo}"><button class="commonBtn">삭제하기</button></a>
+	</c:if>
+	<a href="getNoticeList.do"><button class="commonBtn">글 목록으로</button></a>
+	<div id="disqus_thread"></div>
+</div>
 <script>
 
 /**

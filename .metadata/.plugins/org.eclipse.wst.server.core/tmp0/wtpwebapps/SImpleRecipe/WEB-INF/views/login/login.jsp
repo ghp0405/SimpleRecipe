@@ -29,6 +29,14 @@
 			</div>
 		</form>
 	</div>
+	<c:if test="${loginState == '로그인 실패'}">
+		<script>
+			alert('로그인 실패');
+		</script>
+	</c:if>
+	<script>
+		alert(loginState);
+	</script>
 	<script>
 		$(".inputTxt").on("focus", function(){
 			$(this).siblings('label').css({

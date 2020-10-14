@@ -1,36 +1,35 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
+<link rel="stylesheet" href="<c:url value="/resources/css/getQnA.css" />" >
 </head>
 <body>
-<table>
-	<tr>
-		<th>제목</th>
-		<td>${qna.qnaTbTitle}</td>
-	</tr>
-	<tr>
-		<th>작성자 ID</th>
-		<td>${qna.userTbId}</td>
-	</tr>
-	<tr>
-		<th>내용</th>
-		<td width="1024">${qna.qnaTbContent}</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="updateQnA.do?qnaTbNo=${qna.qnaTbNo}">글 수정하기</a>
-		</td>
-		<td>
-			<a href="deleteQnA.do?qnaTbNo=${qna.qnaTbNo}">글 삭제하기</a>
-		</td>
-	</tr>
-</table>
-<a href="getQnAList.do">글 목록으로</a>
-<div id="disqus_thread"></div>
+<div class="qna-wrap">
+	<table>
+		<tr>
+			<th>제목</th>
+			<td>${qna.qnaTbTitle}</td>
+		</tr>
+		<tr>
+			<th>작성자 ID</th>
+			<td>${qna.userTbId}</td>
+		</tr>
+		<tr>
+			<th>내용</th>
+			<td width="1024">${qna.qnaTbContent}</td>
+		</tr>
+	</table>
+	<c:if test="${qna.userTbId eq userTbId}">
+		<a href="updateQnA.do?qnaTbNo=${qna.qnaTbNo}"><button class="commonBtn">글 수정하기</button></a>
+		<a href="deleteQnA.do?qnaTbNo=${qna.qnaTbNo}"><button class="commonBtn">글 삭제하기</button></a>
+	</c:if>
+	<a href="getQnAList.do"><button class="commonBtn">글 목록으로</button></a>
+	<div id="disqus_thread"></div>
+</div>
 <script>
 
 /**

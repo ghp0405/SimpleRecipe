@@ -200,6 +200,7 @@ public class MainController {
 				// contents가 여러 줄일 경우
 				if(toggle) {
 					content += str;
+					content += "<br />";
 				}
 				if(str.contains("조리순서")) {
 					toggle = true;

@@ -11,7 +11,7 @@
 </head>
 <body>
 <form action="update.do" method="post" id="recipeSaveForm"
-	encType="multipart/form-data" >
+	encType="multipart/form-data" accept-charset="UTF-8" >
 	<input type="hidden" name="recipeTbNo" value="${recipe.recipeTbNo}" />
 	<%-- input file의 경우 보안문제상 read-only이기 때문에 value지정이 불가능하다. --%>
 	<input type="file" name="imgFile" /><br />
