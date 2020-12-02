@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+	background-color: #f9f9f9;
+}
+
+h1 {
+	color: #ff9f40;
+	font-size: 40px;
+	text-align: center;
+	font-weight: 600;
+}
+
+h2 {
+	color: #fff;
+	font-size: 28px;
+	text-align: center;
+	text-shadow: 1px 1px 2px #000;
+}
+
+p {
+	color: #ff9f40;
+	text-align: center;
+	font-size: 22px;
+	margin-top: 80px;
+}
+
+.footer-wrap {
+	background: #242f46;
+	box-shadow: 3px 3px 14px 3px rgba(0,0,0,0.3);
+	width: 900px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px 100px;
+	box-sizing: border-box;
+}
+
+
+

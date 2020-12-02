@@ -1,0 +1,623 @@
+[2020-11-24 12:08:20] INFO : ContextLoader.java:271 - Root WebApplicationContext: initialization started
+[2020-11-24 12:08:20] INFO : SpringSecurityCoreVersion.java:75 - You are running with Spring Security Core 5.4.1
+[2020-11-24 12:08:20] INFO : SecurityNamespaceHandler.java:84 - Spring Security 'config' module version is 5.4.1
+[2020-11-24 12:08:20] INFO : AuthenticationConfigBuilder.java:647 - No login page configured. The default internal one will be used. Use the 'login-page' attribute to set the URL of the login page.
+[2020-11-24 12:08:20] INFO : HttpSecurityBeanDefinitionParser.java:281 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.csrf.CsrfFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1400, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 2200, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2500, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2700, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2800, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2900]
+[2020-11-24 12:08:21] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.driverClassName]
+[2020-11-24 12:08:21] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.driverClassName] not found - trying original name [jdbc.driverClassName]. javax.naming.NameNotFoundException: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:21] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.driverClassName]
+[2020-11-24 12:08:21] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.driverClassName] threw NamingException with message: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:21] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+[2020-11-24 12:08:21] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:21] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.url]
+[2020-11-24 12:08:21] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:21] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+[2020-11-24 12:08:21] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:21] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.username]
+[2020-11-24 12:08:21] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:21] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+[2020-11-24 12:08:21] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:21] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.password]
+[2020-11-24 12:08:21] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:21] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@6c8d8b60]
+[2020-11-24 12:08:21] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2020-11-24 12:08:21] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[2020-11-24 12:08:21] DEBUG: Logger.java:49 - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[2020-11-24 12:08:21] DEBUG: Logger.java:49 - Property 'mapperLocations' was not specified.
+[2020-11-24 12:08:22] INFO : DefaultSecurityFilterChain.java:51 - Will secure any request with [org.springframework.security.web.context.SecurityContextPersistenceFilter@29431f61, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f98cff, org.springframework.security.web.header.HeaderWriterFilter@59c38af5, org.springframework.security.web.csrf.CsrfFilter@6244afc4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@534d0cfa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1f1ffc18, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5a4e492c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d33e72e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26a202ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46bdc55e, org.springframework.security.web.session.SessionManagementFilter@6e12f38c, org.springframework.security.web.access.ExceptionTranslationFilter@6c1a63f7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a9baba8]
+[2020-11-24 12:08:22] INFO : DefaultFilterChainValidator.java:142 - Checking whether login URL '/login' is accessible with your configuration
+[2020-11-24 12:08:22] DEBUG: DefaultFilterChainValidator.java:159 - Default generated login page is in use
+[2020-11-24 12:08:22] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:08:22] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:22] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:08:22] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:22] INFO : ContextLoader.java:307 - Root WebApplicationContext initialized in 2262 ms
+[2020-11-24 12:08:22] INFO : FrameworkServlet.java:525 - Initializing Servlet 'appServlet'
+[2020-11-24 12:08:22] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+[2020-11-24 12:08:22] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:22] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.active]
+[2020-11-24 12:08:22] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:22] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+[2020-11-24 12:08:22] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:22] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.default]
+[2020-11-24 12:08:22] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:23] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@4866a755]
+[2020-11-24 12:08:23] DEBUG: ReflectiveAspectJAdvisorFactory.java:258 - Found AspectJ method: public java.lang.Object com.simplerecipe.common.aop.LogAdvice.logPrint(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+[2020-11-24 12:08:24] DEBUG: Digester.java:2011 - register('-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN', 'jar:file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/lib/tiles-core-3.0.8.jar!/org/apache/tiles/resources/tiles-config_3_0.dtd'
+[2020-11-24 12:08:24] WARN : PostfixedApplicationResource.java:84 - No supported matching language for locale "definition". Using file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/classes/tiles/tiles_definition.xml as a non-localized resource path. see TILES-571
+[2020-11-24 12:08:24] INFO : TilesAccess.java:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:08:25] WARN : AbstractApplicationContext.java:559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[2020-11-24 12:08:25] INFO : TilesAccess.java:88 - Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:08:25] ERROR: FrameworkServlet.java:534 - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1134)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1089)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:983)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4864)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5173)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:631)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:526)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:936)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:738)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 63 more
+[2020-11-24 12:08:25] INFO : FrameworkServlet.java:525 - Initializing Servlet 'appServlet'
+[2020-11-24 12:08:25] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+[2020-11-24 12:08:25] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:25] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.active]
+[2020-11-24 12:08:25] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:25] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+[2020-11-24 12:08:25] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:25] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.default]
+[2020-11-24 12:08:25] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:25] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@36ef144f]
+[2020-11-24 12:08:25] DEBUG: ReflectiveAspectJAdvisorFactory.java:258 - Found AspectJ method: public java.lang.Object com.simplerecipe.common.aop.LogAdvice.logPrint(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+[2020-11-24 12:08:25] DEBUG: Digester.java:2011 - register('-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN', 'jar:file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/lib/tiles-core-3.0.8.jar!/org/apache/tiles/resources/tiles-config_3_0.dtd'
+[2020-11-24 12:08:25] WARN : PostfixedApplicationResource.java:84 - No supported matching language for locale "definition". Using file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/classes/tiles/tiles_definition.xml as a non-localized resource path. see TILES-571
+[2020-11-24 12:08:25] INFO : TilesAccess.java:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:08:25] WARN : AbstractApplicationContext.java:559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[2020-11-24 12:08:25] INFO : TilesAccess.java:88 - Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:08:25] ERROR: FrameworkServlet.java:534 - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1134)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1089)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 39 more
+[2020-11-24 12:08:41] INFO : FrameworkServlet.java:525 - Initializing Servlet 'appServlet'
+[2020-11-24 12:08:41] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+[2020-11-24 12:08:41] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:41] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.active]
+[2020-11-24 12:08:41] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:41] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+[2020-11-24 12:08:41] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:41] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.default]
+[2020-11-24 12:08:41] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:41] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@1ee8570e]
+[2020-11-24 12:08:41] DEBUG: ReflectiveAspectJAdvisorFactory.java:258 - Found AspectJ method: public java.lang.Object com.simplerecipe.common.aop.LogAdvice.logPrint(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+[2020-11-24 12:08:41] DEBUG: Digester.java:2011 - register('-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN', 'jar:file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/lib/tiles-core-3.0.8.jar!/org/apache/tiles/resources/tiles-config_3_0.dtd'
+[2020-11-24 12:08:41] WARN : PostfixedApplicationResource.java:84 - No supported matching language for locale "definition". Using file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/classes/tiles/tiles_definition.xml as a non-localized resource path. see TILES-571
+[2020-11-24 12:08:41] INFO : TilesAccess.java:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:08:41] WARN : AbstractApplicationContext.java:559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[2020-11-24 12:08:41] INFO : TilesAccess.java:88 - Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:08:41] ERROR: FrameworkServlet.java:534 - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1134)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1089)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 39 more
+[2020-11-24 12:08:41] INFO : FrameworkServlet.java:525 - Initializing Servlet 'appServlet'
+[2020-11-24 12:08:41] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+[2020-11-24 12:08:41] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:41] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.active]
+[2020-11-24 12:08:41] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:41] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+[2020-11-24 12:08:41] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:41] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.default]
+[2020-11-24 12:08:41] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:41] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@17ace63d]
+[2020-11-24 12:08:41] DEBUG: ReflectiveAspectJAdvisorFactory.java:258 - Found AspectJ method: public java.lang.Object com.simplerecipe.common.aop.LogAdvice.logPrint(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+[2020-11-24 12:08:41] DEBUG: Digester.java:2011 - register('-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN', 'jar:file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/lib/tiles-core-3.0.8.jar!/org/apache/tiles/resources/tiles-config_3_0.dtd'
+[2020-11-24 12:08:41] WARN : PostfixedApplicationResource.java:84 - No supported matching language for locale "definition". Using file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/classes/tiles/tiles_definition.xml as a non-localized resource path. see TILES-571
+[2020-11-24 12:08:41] INFO : TilesAccess.java:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:08:41] WARN : AbstractApplicationContext.java:559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[2020-11-24 12:08:41] INFO : TilesAccess.java:88 - Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:08:41] ERROR: FrameworkServlet.java:534 - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1134)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1089)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 39 more
+[2020-11-24 12:08:47] INFO : FrameworkServlet.java:525 - Initializing Servlet 'appServlet'
+[2020-11-24 12:08:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+[2020-11-24 12:08:47] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.active]
+[2020-11-24 12:08:47] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+[2020-11-24 12:08:47] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.default]
+[2020-11-24 12:08:47] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:47] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@73619fdc]
+[2020-11-24 12:08:47] DEBUG: ReflectiveAspectJAdvisorFactory.java:258 - Found AspectJ method: public java.lang.Object com.simplerecipe.common.aop.LogAdvice.logPrint(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+[2020-11-24 12:08:47] DEBUG: Digester.java:2011 - register('-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN', 'jar:file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/lib/tiles-core-3.0.8.jar!/org/apache/tiles/resources/tiles-config_3_0.dtd'
+[2020-11-24 12:08:47] WARN : PostfixedApplicationResource.java:84 - No supported matching language for locale "definition". Using file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/classes/tiles/tiles_definition.xml as a non-localized resource path. see TILES-571
+[2020-11-24 12:08:47] INFO : TilesAccess.java:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:08:47] WARN : AbstractApplicationContext.java:559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[2020-11-24 12:08:47] INFO : TilesAccess.java:88 - Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:08:47] ERROR: FrameworkServlet.java:534 - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1134)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1089)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 39 more
+[2020-11-24 12:08:47] INFO : FrameworkServlet.java:525 - Initializing Servlet 'appServlet'
+[2020-11-24 12:08:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+[2020-11-24 12:08:47] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.active]
+[2020-11-24 12:08:47] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+[2020-11-24 12:08:47] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.
+[2020-11-24 12:08:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.default]
+[2020-11-24 12:08:47] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:08:48] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@7025779a]
+[2020-11-24 12:08:48] DEBUG: ReflectiveAspectJAdvisorFactory.java:258 - Found AspectJ method: public java.lang.Object com.simplerecipe.common.aop.LogAdvice.logPrint(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+[2020-11-24 12:08:48] DEBUG: Digester.java:2011 - register('-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN', 'jar:file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/lib/tiles-core-3.0.8.jar!/org/apache/tiles/resources/tiles-config_3_0.dtd'
+[2020-11-24 12:08:48] WARN : PostfixedApplicationResource.java:84 - No supported matching language for locale "definition". Using file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/classes/tiles/tiles_definition.xml as a non-localized resource path. see TILES-571
+[2020-11-24 12:08:48] INFO : TilesAccess.java:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:08:48] WARN : AbstractApplicationContext.java:559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[2020-11-24 12:08:48] INFO : TilesAccess.java:88 - Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:08:48] ERROR: FrameworkServlet.java:534 - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1134)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1089)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.simplerecipe.login.service.LoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 39 more
+[2020-11-24 12:09:32] INFO : ContextLoader.java:271 - Root WebApplicationContext: initialization started
+[2020-11-24 12:09:32] INFO : SpringSecurityCoreVersion.java:75 - You are running with Spring Security Core 5.4.1
+[2020-11-24 12:09:32] INFO : SecurityNamespaceHandler.java:84 - Spring Security 'config' module version is 5.4.1
+[2020-11-24 12:09:32] INFO : AuthenticationConfigBuilder.java:647 - No login page configured. The default internal one will be used. Use the 'login-page' attribute to set the URL of the login page.
+[2020-11-24 12:09:32] INFO : HttpSecurityBeanDefinitionParser.java:281 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.csrf.CsrfFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1400, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 2200, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2500, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2700, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2800, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2900]
+[2020-11-24 12:09:33] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.driverClassName]
+[2020-11-24 12:09:33] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.driverClassName] not found - trying original name [jdbc.driverClassName]. javax.naming.NameNotFoundException: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.
+[2020-11-24 12:09:33] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.driverClassName]
+[2020-11-24 12:09:33] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.driverClassName] threw NamingException with message: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:09:33] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+[2020-11-24 12:09:33] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.
+[2020-11-24 12:09:33] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.url]
+[2020-11-24 12:09:33] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:09:33] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+[2020-11-24 12:09:33] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.
+[2020-11-24 12:09:33] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.username]
+[2020-11-24 12:09:33] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:09:33] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+[2020-11-24 12:09:33] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.
+[2020-11-24 12:09:33] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.password]
+[2020-11-24 12:09:33] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:09:33] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@338a7cc]
+[2020-11-24 12:09:33] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2020-11-24 12:09:33] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[2020-11-24 12:09:33] DEBUG: Logger.java:49 - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[2020-11-24 12:09:33] DEBUG: Logger.java:49 - Property 'mapperLocations' was not specified.
+[2020-11-24 12:09:33] INFO : DefaultSecurityFilterChain.java:51 - Will secure any request with [org.springframework.security.web.context.SecurityContextPersistenceFilter@11864ace, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a9d6db1, org.springframework.security.web.header.HeaderWriterFilter@395daf8e, org.springframework.security.web.csrf.CsrfFilter@4d480e21, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6ebbed7c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7f5af5ff, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2b2f0445, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@261b3e07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@177ae7b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f270da8, org.springframework.security.web.session.SessionManagementFilter@6c792b25, org.springframework.security.web.access.ExceptionTranslationFilter@136dcbab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@536ad13c]
+[2020-11-24 12:09:33] INFO : DefaultFilterChainValidator.java:142 - Checking whether login URL '/login' is accessible with your configuration
+[2020-11-24 12:09:34] DEBUG: DefaultFilterChainValidator.java:159 - Default generated login page is in use
+[2020-11-24 12:09:34] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:09:34] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.
+[2020-11-24 12:09:34] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:09:34] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:09:34] INFO : ContextLoader.java:307 - Root WebApplicationContext initialized in 1842 ms
+[2020-11-24 12:09:34] INFO : FrameworkServlet.java:525 - Initializing Servlet 'appServlet'
+[2020-11-24 12:09:34] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+[2020-11-24 12:09:34] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.
+[2020-11-24 12:09:34] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.active]
+[2020-11-24 12:09:34] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:09:34] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+[2020-11-24 12:09:34] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.
+[2020-11-24 12:09:34] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.default]
+[2020-11-24 12:09:34] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:09:34] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@1880e6a2]
+[2020-11-24 12:09:34] DEBUG: ReflectiveAspectJAdvisorFactory.java:258 - Found AspectJ method: public java.lang.Object com.simplerecipe.common.aop.LogAdvice.logPrint(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+[2020-11-24 12:09:35] DEBUG: Digester.java:2011 - register('-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN', 'jar:file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/lib/tiles-core-3.0.8.jar!/org/apache/tiles/resources/tiles-config_3_0.dtd'
+[2020-11-24 12:09:35] WARN : PostfixedApplicationResource.java:84 - No supported matching language for locale "definition". Using file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/classes/tiles/tiles_definition.xml as a non-localized resource path. see TILES-571
+[2020-11-24 12:09:36] INFO : TilesAccess.java:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:09:36] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:09:36] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.
+[2020-11-24 12:09:36] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:09:36] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:09:36] INFO : FrameworkServlet.java:547 - Completed initialization in 2170 ms
+[2020-11-24 12:10:12] INFO : TilesAccess.java:88 - Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:10:16] INFO : ContextLoader.java:271 - Root WebApplicationContext: initialization started
+[2020-11-24 12:10:16] INFO : SpringSecurityCoreVersion.java:75 - You are running with Spring Security Core 5.4.1
+[2020-11-24 12:10:16] INFO : SecurityNamespaceHandler.java:84 - Spring Security 'config' module version is 5.4.1
+[2020-11-24 12:10:16] INFO : AuthenticationConfigBuilder.java:647 - No login page configured. The default internal one will be used. Use the 'login-page' attribute to set the URL of the login page.
+[2020-11-24 12:10:16] INFO : HttpSecurityBeanDefinitionParser.java:281 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.csrf.CsrfFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1400, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 2200, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2500, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2700, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2800, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2900]
+[2020-11-24 12:10:17] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.driverClassName]
+[2020-11-24 12:10:17] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.driverClassName] not found - trying original name [jdbc.driverClassName]. javax.naming.NameNotFoundException: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:17] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.driverClassName]
+[2020-11-24 12:10:17] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.driverClassName] threw NamingException with message: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:17] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+[2020-11-24 12:10:17] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:17] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.url]
+[2020-11-24 12:10:17] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:17] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+[2020-11-24 12:10:17] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:17] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.username]
+[2020-11-24 12:10:17] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:17] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+[2020-11-24 12:10:17] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:17] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.password]
+[2020-11-24 12:10:17] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:17] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@47ba896b]
+[2020-11-24 12:10:17] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2020-11-24 12:10:17] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[2020-11-24 12:10:17] DEBUG: Logger.java:49 - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[2020-11-24 12:10:17] DEBUG: Logger.java:49 - Property 'mapperLocations' was not specified.
+[2020-11-24 12:10:18] INFO : DefaultSecurityFilterChain.java:51 - Will secure any request with [org.springframework.security.web.context.SecurityContextPersistenceFilter@3cd71256, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6350be0, org.springframework.security.web.header.HeaderWriterFilter@4dcdf79c, org.springframework.security.web.csrf.CsrfFilter@5a0b304e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5e4accfb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@700eb6d9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@525dce53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51571d16, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59f22ed3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ccff34a, org.springframework.security.web.session.SessionManagementFilter@60dc81d6, org.springframework.security.web.access.ExceptionTranslationFilter@98a9f76, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4146bc22]
+[2020-11-24 12:10:18] INFO : DefaultFilterChainValidator.java:142 - Checking whether login URL '/login' is accessible with your configuration
+[2020-11-24 12:10:18] DEBUG: DefaultFilterChainValidator.java:159 - Default generated login page is in use
+[2020-11-24 12:10:18] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:10:18] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:18] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:10:18] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:18] INFO : ContextLoader.java:307 - Root WebApplicationContext initialized in 2204 ms
+[2020-11-24 12:10:18] INFO : FrameworkServlet.java:525 - Initializing Servlet 'appServlet'
+[2020-11-24 12:10:18] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+[2020-11-24 12:10:18] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:18] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.active]
+[2020-11-24 12:10:18] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:18] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+[2020-11-24 12:10:18] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:18] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.default]
+[2020-11-24 12:10:18] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:19] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@d0d0fca]
+[2020-11-24 12:10:19] DEBUG: ReflectiveAspectJAdvisorFactory.java:258 - Found AspectJ method: public java.lang.Object com.simplerecipe.common.aop.LogAdvice.logPrint(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+[2020-11-24 12:10:20] DEBUG: Digester.java:2011 - register('-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN', 'jar:file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/lib/tiles-core-3.0.8.jar!/org/apache/tiles/resources/tiles-config_3_0.dtd'
+[2020-11-24 12:10:20] WARN : PostfixedApplicationResource.java:84 - No supported matching language for locale "definition". Using file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/classes/tiles/tiles_definition.xml as a non-localized resource path. see TILES-571
+[2020-11-24 12:10:20] INFO : TilesAccess.java:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:10:21] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:10:21] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:21] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:10:21] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:21] INFO : FrameworkServlet.java:547 - Completed initialization in 2565 ms
+[2020-11-24 12:10:27] INFO : TilesAccess.java:88 - Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:10:34] INFO : ContextLoader.java:271 - Root WebApplicationContext: initialization started
+[2020-11-24 12:10:35] INFO : SpringSecurityCoreVersion.java:75 - You are running with Spring Security Core 5.4.1
+[2020-11-24 12:10:35] INFO : SecurityNamespaceHandler.java:84 - Spring Security 'config' module version is 5.4.1
+[2020-11-24 12:10:35] INFO : AuthenticationConfigBuilder.java:647 - No login page configured. The default internal one will be used. Use the 'login-page' attribute to set the URL of the login page.
+[2020-11-24 12:10:35] INFO : HttpSecurityBeanDefinitionParser.java:281 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.csrf.CsrfFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1400, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 2200, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2500, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2700, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2800, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2900]
+[2020-11-24 12:10:35] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.driverClassName]
+[2020-11-24 12:10:35] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.driverClassName] not found - trying original name [jdbc.driverClassName]. javax.naming.NameNotFoundException: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:35] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.driverClassName]
+[2020-11-24 12:10:35] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.driverClassName] threw NamingException with message: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:35] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+[2020-11-24 12:10:35] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:35] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.url]
+[2020-11-24 12:10:35] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:35] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+[2020-11-24 12:10:35] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:35] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.username]
+[2020-11-24 12:10:35] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:35] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+[2020-11-24 12:10:35] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:35] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.password]
+[2020-11-24 12:10:35] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:35] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@6c8d8b60]
+[2020-11-24 12:10:36] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2020-11-24 12:10:36] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[2020-11-24 12:10:36] DEBUG: Logger.java:49 - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[2020-11-24 12:10:36] DEBUG: Logger.java:49 - Property 'mapperLocations' was not specified.
+[2020-11-24 12:10:36] INFO : DefaultSecurityFilterChain.java:51 - Will secure any request with [org.springframework.security.web.context.SecurityContextPersistenceFilter@29431f61, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f98cff, org.springframework.security.web.header.HeaderWriterFilter@59c38af5, org.springframework.security.web.csrf.CsrfFilter@6244afc4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@534d0cfa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1f1ffc18, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5a4e492c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d33e72e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26a202ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46bdc55e, org.springframework.security.web.session.SessionManagementFilter@6e12f38c, org.springframework.security.web.access.ExceptionTranslationFilter@6c1a63f7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a9baba8]
+[2020-11-24 12:10:36] INFO : DefaultFilterChainValidator.java:142 - Checking whether login URL '/login' is accessible with your configuration
+[2020-11-24 12:10:36] DEBUG: DefaultFilterChainValidator.java:159 - Default generated login page is in use
+[2020-11-24 12:10:36] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:10:36] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:36] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:10:36] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:37] INFO : ContextLoader.java:307 - Root WebApplicationContext initialized in 2136 ms
+[2020-11-24 12:10:37] INFO : FrameworkServlet.java:525 - Initializing Servlet 'appServlet'
+[2020-11-24 12:10:37] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+[2020-11-24 12:10:37] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:37] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.active]
+[2020-11-24 12:10:37] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:37] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+[2020-11-24 12:10:37] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:37] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.default]
+[2020-11-24 12:10:37] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:37] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@f833223]
+[2020-11-24 12:10:37] DEBUG: ReflectiveAspectJAdvisorFactory.java:258 - Found AspectJ method: public java.lang.Object com.simplerecipe.common.aop.LogAdvice.logPrint(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+[2020-11-24 12:10:39] DEBUG: Digester.java:2011 - register('-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN', 'jar:file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/lib/tiles-core-3.0.8.jar!/org/apache/tiles/resources/tiles-config_3_0.dtd'
+[2020-11-24 12:10:39] WARN : PostfixedApplicationResource.java:84 - No supported matching language for locale "definition". Using file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/classes/tiles/tiles_definition.xml as a non-localized resource path. see TILES-571
+[2020-11-24 12:10:39] INFO : TilesAccess.java:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-24 12:10:39] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:10:39] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.
+[2020-11-24 12:10:39] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+[2020-11-24 12:10:39] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-24 12:10:39] INFO : FrameworkServlet.java:547 - Completed initialization in 2590 ms
+[2020-11-24 12:10:39] DEBUG: FilterChainProxy.java:208 - Securing GET /
+[2020-11-24 12:10:39] DEBUG: FilterChainProxy.java:208 - Securing GET /login
+[2020-11-24 12:10:39] DEBUG: SecurityContextPersistenceFilter.java:102 - Set SecurityContextHolder to empty SecurityContext
+[2020-11-24 12:10:39] DEBUG: SecurityContextPersistenceFilter.java:102 - Set SecurityContextHolder to empty SecurityContext
+[2020-11-24 12:10:39] DEBUG: AnonymousAuthenticationFilter.java:96 - Set SecurityContextHolder to anonymous SecurityContext
+[2020-11-24 12:10:39] DEBUG: HttpSessionSecurityContextRepository.java:345 - Did not store empty SecurityContext
+[2020-11-24 12:10:39] DEBUG: AbstractSecurityInterceptor.java:194 - Authorized public object filter invocation [GET /]
+[2020-11-24 12:10:39] DEBUG: SecurityContextPersistenceFilter.java:118 - Cleared SecurityContextHolder to complete request
+[2020-11-24 12:10:39] DEBUG: FilterChainProxy.java:323 - Secured GET /
+[2020-11-24 12:10:39] WARN : DispatcherServlet.java:1251 - No mapping for GET /
+[2020-11-24 12:10:39] DEBUG: HttpSessionSecurityContextRepository.java:348 - Did not store anonymous SecurityContext
+[2020-11-24 12:10:39] DEBUG: SecurityContextPersistenceFilter.java:118 - Cleared SecurityContextHolder to complete request
+[2020-11-24 12:10:40] DEBUG: FilterChainProxy.java:208 - Securing GET /favicon.ico
+[2020-11-24 12:10:40] DEBUG: SecurityContextPersistenceFilter.java:102 - Set SecurityContextHolder to empty SecurityContext
+[2020-11-24 12:10:40] DEBUG: AnonymousAuthenticationFilter.java:96 - Set SecurityContextHolder to anonymous SecurityContext
+[2020-11-24 12:10:40] DEBUG: AbstractSecurityInterceptor.java:194 - Authorized public object filter invocation [GET /favicon.ico]
+[2020-11-24 12:10:40] DEBUG: FilterChainProxy.java:323 - Secured GET /favicon.ico
+[2020-11-24 12:10:40] DEBUG: HttpSessionSecurityContextRepository.java:348 - Did not store anonymous SecurityContext
+[2020-11-24 12:10:40] DEBUG: SecurityContextPersistenceFilter.java:118 - Cleared SecurityContextHolder to complete request
+[2020-11-24 12:35:32] INFO : TilesAccess.java:88 - Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
