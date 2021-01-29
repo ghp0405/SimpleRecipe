@@ -31,9 +31,9 @@
 			</tr>
 				
 		</table>
+		<button type="submit" id="EditorSaveBtn" class="commonBtn">QnA 수정</button>
+		<a href="/board/getQnAList"><button type="button" class="commonBtn">돌아가기</button></a>
 	</form>
-	<button type="submit" id="EditorSaveBtn" class="commonBtn">QnA 수정</button>
-	<a href="/board/getQnAList"><button type="button" class="commonBtn">돌아가기</button></a>
 </div>
 </body>
 </html>

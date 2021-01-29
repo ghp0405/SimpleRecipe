@@ -32,9 +32,9 @@
 				</td>
 			</tr>
 		</table>
+		<button type="submit" id="EditorSaveBtn" class="commonBtn">공지 수정</button>
+		<a href="/board/getNoticeList"><button class="commonBtn">돌아가기</button></a>
 	</form>
-	<button type="submit" id="EditorSaveBtn" class="commonBtn">공지 수정</button>
-	<a href="/board/getNoticeList"><button class="commonBtn">돌아가기</button></a>
 </div>
 </body>
 </html>

@@ -20,13 +20,13 @@ public class MgtController {
 	@RequestMapping("/suspendUser")
 	public String suspendUser(UserVO vo) {
 		userMgtService.suspendUser(vo);
-		return "redirect:/getUserList";
+		return "redirect:/admin/getUserList";
 	}
 	
 	@RequestMapping("/unsuspendUser")
 	public String unsuspendUser(UserVO vo) {
 		userMgtService.unsuspendUser(vo);
-		return "redirect:/getUserList";
+		return "redirect:/admin/getUserList";
 	}
 	
 	@RequestMapping("/getUserList")
@@ -37,7 +37,7 @@ public class MgtController {
 		cri = pageMaker.getCri();
 		model.addAttribute("pageMaker", pageMaker);
 		model.addAttribute("userList", userMgtService.getUserList(cri));
-		return "getUserList";
+		return "/admin/getUserList";
 	}
 	
 }

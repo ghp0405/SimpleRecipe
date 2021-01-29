@@ -22,7 +22,7 @@
 		</tr>
 		<tr>
 			<th>내용</th>
-			<td width="1024">${notice.noticeTbContent}</td>
+			<td width="1024" class="get-notice-content">${notice.noticeTbContent}</td>
 		</tr>
 	</table>
 	<c:if test="${userType == '관리자'}">

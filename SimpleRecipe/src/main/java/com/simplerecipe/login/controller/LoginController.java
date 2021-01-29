@@ -4,7 +4,6 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -18,6 +17,11 @@ public class LoginController {
 	
 	@Autowired
 	private LoginService loginService;
+	
+	@RequestMapping(value="/weather", method=RequestMethod.GET)
+	public String getWeather() {
+		return "/login/weather";
+	}
 	
 	// 로그인 창을 나타낸다.
 	@RequestMapping(value="/login", method=RequestMethod.GET)
@@ -34,6 +38,7 @@ public class LoginController {
 		
 		// 일반 사용자 로그인 성공시
 		if(loginResult) {
+			uvo = loginService.getUser(uvo);
 			// 세션에 사용자 정보를 등록
 			session.setAttribute("userLogin", uvo);
 			session.setAttribute("userTbId", uvo.getUserTbId());
@@ -48,6 +53,7 @@ public class LoginController {
 			loginResult = loginService.adminLoginCheck(avo);
 			// 관리자 로그인 성공시
 			if(loginResult) {
+				avo = loginService.getAdmin(avo);
 				// 세션에 관리자 정보를 등록
 				session.setAttribute("adminLogin", avo);
 				session.setAttribute("adminTbId", avo.getAdminTbId());

@@ -18,11 +18,11 @@ h2 {
 	text-shadow: 1px 1px 2px #000;
 }
 
-p {
-	color: #ff9f40;
-	text-align: center;
-	font-size: 22px;
-	margin-top: 80px;
+.get-notice-content p {
+	color: white;
+	text-align: left;
+	font-size: 16px;
+	margin : 0;
 }
 
 td, th {
