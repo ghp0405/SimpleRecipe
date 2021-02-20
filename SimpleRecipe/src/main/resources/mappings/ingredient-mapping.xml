@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="IngredientDAO">
+	<resultMap type="ingredient" id="ingredientResult">
+		<id property="ingredientTbNo" column="INGREDIENT_TB_NO" />
+		<result property="ingredientTbName" column="INGREDIENT_TB_NAME" />
+	</resultMap>
+	
+	<insert id="insertIngredient" parameterType="ingredient">
+		INSERT INTO INGREDIENT(INGREDIENT_TB_NO, INGREDIENT_TB_NAME) 
+		VALUES(SEQ_INGREDIENT_TB_NO.NEXTVAL, #{ingredientTbName})
+	</insert>
+	
+	<select id="searchIngredient" resultMap="ingredientResult"
+		parameterType="ingredient" >
+		SELECT INGREDIENT_TB_NO, INGREDIENT_TB_NAME 
+		FROM INGREDIENT
+		WHERE INGREDIENT_TB_NAME = #{ingredientTbName}
+	</select>
+	
+	<select id="getIngredient" resultMap="ingredientResult"
+		parameterType="Integer" >
+		SELECT INGREDIENT_TB_NO, INGREDIENT_TB_NAME 
+		FROM INGREDIENT
+		WHERE INGREDIENT_TB_NO = #{ingredientTbNo}
+	</select>
+	
+</mapper>

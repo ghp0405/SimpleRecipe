@@ -1,0 +1,436 @@
+[2020-11-28 19:38:45] INFO : ContextLoader.java:271 - Root WebApplicationContext: initialization started
+[2020-11-28 19:38:45] INFO : SpringSecurityCoreVersion.java:75 - You are running with Spring Security Core 5.4.1
+[2020-11-28 19:38:45] INFO : SecurityNamespaceHandler.java:84 - Spring Security 'config' module version is 5.4.1
+[2020-11-28 19:38:45] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'permitAll' for /users/all
+[2020-11-28 19:38:45] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'hasRole('ROLE_MEMBER')' for /users/member
+[2020-11-28 19:38:45] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'hasRole('ROLE_ADMIN')' for /users/admin
+[2020-11-28 19:38:45] INFO : HttpSecurityBeanDefinitionParser.java:281 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.csrf.CsrfFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 800, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1400, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 2200, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2500, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2700, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2800, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2900]
+[2020-11-28 19:38:46] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.driverClassName]
+[2020-11-28 19:38:46] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.driverClassName] not found - trying original name [jdbc.driverClassName]. javax.naming.NameNotFoundException: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.
+[2020-11-28 19:38:46] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.driverClassName]
+[2020-11-28 19:38:46] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.driverClassName] threw NamingException with message: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:38:46] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+[2020-11-28 19:38:46] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.
+[2020-11-28 19:38:46] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.url]
+[2020-11-28 19:38:46] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:38:46] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+[2020-11-28 19:38:46] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.
+[2020-11-28 19:38:46] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.username]
+[2020-11-28 19:38:46] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:38:46] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+[2020-11-28 19:38:46] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.
+[2020-11-28 19:38:46] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.password]
+[2020-11-28 19:38:46] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:38:46] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@69cc49ec]
+[2020-11-28 19:38:46] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2020-11-28 19:38:46] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[2020-11-28 19:38:46] DEBUG: Logger.java:49 - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[2020-11-28 19:38:46] DEBUG: Logger.java:49 - Property 'mapperLocations' was not specified.
+[2020-11-28 19:38:47] DEBUG: ExpressionBasedFilterInvocationSecurityMetadataSource.java:72 - Adding web access control expression [permitAll] for Ant [pattern='/users/all']
+[2020-11-28 19:38:47] DEBUG: ExpressionBasedFilterInvocationSecurityMetadataSource.java:72 - Adding web access control expression [hasRole('ROLE_MEMBER')] for Ant [pattern='/users/member']
+[2020-11-28 19:38:47] DEBUG: ExpressionBasedFilterInvocationSecurityMetadataSource.java:72 - Adding web access control expression [hasRole('ROLE_ADMIN')] for Ant [pattern='/users/admin']
+[2020-11-28 19:38:47] INFO : DefaultSecurityFilterChain.java:51 - Will secure any request with [org.springframework.security.web.context.SecurityContextPersistenceFilter@de40aa1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61b76a7d, org.springframework.security.web.header.HeaderWriterFilter@57f89680, org.springframework.security.web.csrf.CsrfFilter@70bc9070, org.springframework.security.web.authentication.logout.LogoutFilter@5d202dc4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71e409f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@14c18a6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6aa792, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c78f456, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29174dfe, org.springframework.security.web.session.SessionManagementFilter@319d106c, org.springframework.security.web.access.ExceptionTranslationFilter@641e67fa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fdff56b]
+[2020-11-28 19:38:47] INFO : DefaultFilterChainValidator.java:142 - Checking whether login URL '/users/login' is accessible with your configuration
+[2020-11-28 19:38:47] DEBUG: DefaultFilterChainValidator.java:166 - No access attributes defined for login page URL
+[2020-11-28 19:38:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+[2020-11-28 19:38:47] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.
+[2020-11-28 19:38:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+[2020-11-28 19:38:47] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:38:47] INFO : ContextLoader.java:307 - Root WebApplicationContext initialized in 2006 ms
+[2020-11-28 19:38:47] INFO : FrameworkServlet.java:525 - Initializing Servlet 'appServlet'
+[2020-11-28 19:38:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+[2020-11-28 19:38:47] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.
+[2020-11-28 19:38:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.active]
+[2020-11-28 19:38:47] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:38:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+[2020-11-28 19:38:47] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.
+[2020-11-28 19:38:47] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.default]
+[2020-11-28 19:38:47] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:38:48] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@33214124]
+[2020-11-28 19:38:48] DEBUG: ReflectiveAspectJAdvisorFactory.java:258 - Found AspectJ method: public java.lang.Object com.simplerecipe.common.aop.LogAdvice.logPrint(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+[2020-11-28 19:38:49] DEBUG: Digester.java:2011 - register('-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN', 'jar:file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/lib/tiles-core-3.0.8.jar!/org/apache/tiles/resources/tiles-config_3_0.dtd'
+[2020-11-28 19:38:49] WARN : PostfixedApplicationResource.java:84 - No supported matching language for locale "definition". Using file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/classes/tiles/tiles_definition.xml as a non-localized resource path. see TILES-571
+[2020-11-28 19:38:49] INFO : TilesAccess.java:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-28 19:38:49] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+[2020-11-28 19:38:49] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.
+[2020-11-28 19:38:49] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+[2020-11-28 19:38:49] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:38:49] INFO : FrameworkServlet.java:547 - Completed initialization in 2183 ms
+[2020-11-28 19:50:24] INFO : TilesAccess.java:88 - Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-28 19:50:31] INFO : ContextLoader.java:271 - Root WebApplicationContext: initialization started
+[2020-11-28 19:50:31] INFO : SpringSecurityCoreVersion.java:75 - You are running with Spring Security Core 5.4.1
+[2020-11-28 19:50:31] INFO : SecurityNamespaceHandler.java:84 - Spring Security 'config' module version is 5.4.1
+[2020-11-28 19:50:32] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'permitAll' for /users/all
+[2020-11-28 19:50:32] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'hasRole('ROLE_MEMBER')' for /users/member
+[2020-11-28 19:50:32] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'hasRole('ROLE_ADMIN')' for /users/admin
+[2020-11-28 19:50:32] INFO : HttpSecurityBeanDefinitionParser.java:281 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.csrf.CsrfFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 800, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1400, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 2200, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2500, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2700, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2800, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2900]
+[2020-11-28 19:50:32] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.driverClassName]
+[2020-11-28 19:50:32] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.driverClassName] not found - trying original name [jdbc.driverClassName]. javax.naming.NameNotFoundException: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.
+[2020-11-28 19:50:32] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.driverClassName]
+[2020-11-28 19:50:32] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.driverClassName] threw NamingException with message: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:50:32] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+[2020-11-28 19:50:32] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.
+[2020-11-28 19:50:32] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.url]
+[2020-11-28 19:50:32] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:50:32] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+[2020-11-28 19:50:32] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.
+[2020-11-28 19:50:32] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.username]
+[2020-11-28 19:50:32] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:50:32] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+[2020-11-28 19:50:32] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.
+[2020-11-28 19:50:32] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.password]
+[2020-11-28 19:50:32] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:50:32] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@69cc49ec]
+[2020-11-28 19:50:32] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2020-11-28 19:50:32] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[2020-11-28 19:50:33] DEBUG: Logger.java:49 - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[2020-11-28 19:50:33] DEBUG: Logger.java:49 - Property 'mapperLocations' was not specified.
+[2020-11-28 19:50:33] DEBUG: ExpressionBasedFilterInvocationSecurityMetadataSource.java:72 - Adding web access control expression [permitAll] for Ant [pattern='/users/all']
+[2020-11-28 19:50:33] DEBUG: ExpressionBasedFilterInvocationSecurityMetadataSource.java:72 - Adding web access control expression [hasRole('ROLE_MEMBER')] for Ant [pattern='/users/member']
+[2020-11-28 19:50:33] DEBUG: ExpressionBasedFilterInvocationSecurityMetadataSource.java:72 - Adding web access control expression [hasRole('ROLE_ADMIN')] for Ant [pattern='/users/admin']
+[2020-11-28 19:50:33] INFO : DefaultSecurityFilterChain.java:51 - Will secure any request with [org.springframework.security.web.context.SecurityContextPersistenceFilter@de40aa1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61b76a7d, org.springframework.security.web.header.HeaderWriterFilter@57f89680, org.springframework.security.web.csrf.CsrfFilter@70bc9070, org.springframework.security.web.authentication.logout.LogoutFilter@5d202dc4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71e409f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@14c18a6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6aa792, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c78f456, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29174dfe, org.springframework.security.web.session.SessionManagementFilter@319d106c, org.springframework.security.web.access.ExceptionTranslationFilter@641e67fa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fdff56b]
+[2020-11-28 19:50:33] INFO : DefaultFilterChainValidator.java:142 - Checking whether login URL '/users/login' is accessible with your configuration
+[2020-11-28 19:50:33] DEBUG: DefaultFilterChainValidator.java:166 - No access attributes defined for login page URL
+[2020-11-28 19:50:33] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+[2020-11-28 19:50:33] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.
+[2020-11-28 19:50:33] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+[2020-11-28 19:50:33] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:50:33] INFO : ContextLoader.java:307 - Root WebApplicationContext initialized in 2497 ms
+[2020-11-28 19:50:34] INFO : FrameworkServlet.java:525 - Initializing Servlet 'appServlet'
+[2020-11-28 19:50:34] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+[2020-11-28 19:50:34] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.
+[2020-11-28 19:50:34] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.active]
+[2020-11-28 19:50:34] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.active]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:50:34] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+[2020-11-28 19:50:34] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.
+[2020-11-28 19:50:34] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.profiles.default]
+[2020-11-28 19:50:34] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.profiles.default]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:50:34] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@1c528f2f]
+[2020-11-28 19:50:35] DEBUG: ReflectiveAspectJAdvisorFactory.java:258 - Found AspectJ method: public java.lang.Object com.simplerecipe.common.aop.LogAdvice.logPrint(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+[2020-11-28 19:50:36] DEBUG: Digester.java:2011 - register('-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN', 'jar:file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/lib/tiles-core-3.0.8.jar!/org/apache/tiles/resources/tiles-config_3_0.dtd'
+[2020-11-28 19:50:36] WARN : PostfixedApplicationResource.java:84 - No supported matching language for locale "definition". Using file:/C:/SimpleRecipe/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SImpleRecipe/WEB-INF/classes/tiles/tiles_definition.xml as a non-localized resource path. see TILES-571
+[2020-11-28 19:50:36] INFO : TilesAccess.java:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-28 19:50:36] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+[2020-11-28 19:50:36] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.
+[2020-11-28 19:50:36] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+[2020-11-28 19:50:36] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [spring.liveBeansView.mbeanDomain]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 19:50:36] INFO : FrameworkServlet.java:547 - Completed initialization in 2474 ms
+[2020-11-28 20:05:44] INFO : TilesAccess.java:88 - Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2020-11-28 21:23:19] INFO : ContextLoader.java:271 - Root WebApplicationContext: initialization started
+[2020-11-28 21:23:19] INFO : SpringSecurityCoreVersion.java:75 - You are running with Spring Security Core 5.4.1
+[2020-11-28 21:23:19] INFO : SecurityNamespaceHandler.java:84 - Spring Security 'config' module version is 5.4.1
+[2020-11-28 21:23:20] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'permitAll' for /login/login
+[2020-11-28 21:23:20] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'hasRole('ROLE_MEMBER')' for /main/main
+[2020-11-28 21:23:20] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'hasRole('ROLE_ADMIN')' for /main/main
+[2020-11-28 21:23:20] WARN : FilterInvocationSecurityMetadataSourceParser.java:180 - Duplicate URL defined: /main/main. The original attribute values will be overwritten
+[2020-11-28 21:23:20] ERROR: ContextLoader.java:313 - Context initialization failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: The attribute error-page cannot be used together with the 'ref' attribute within <access-denied-handler>
+Offending resource: ServletContext resource [/WEB-INF/spring/security-context.xml]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:119)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:97)
+	at org.springframework.security.config.http.AuthenticationConfigBuilder.createAccessDeniedHandler(AuthenticationConfigBuilder.java:779)
+	at org.springframework.security.config.http.AuthenticationConfigBuilder.createExceptionTranslationFilter(AuthenticationConfigBuilder.java:760)
+	at org.springframework.security.config.http.AuthenticationConfigBuilder.<init>(AuthenticationConfigBuilder.java:246)
+	at org.springframework.security.config.http.HttpSecurityBeanDefinitionParser.createFilterChain(HttpSecurityBeanDefinitionParser.java:149)
+	at org.springframework.security.config.http.HttpSecurityBeanDefinitionParser.parse(HttpSecurityBeanDefinitionParser.java:120)
+	at org.springframework.security.config.SecurityNamespaceHandler.parse(SecurityNamespaceHandler.java:105)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1391)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1371)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:179)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:511)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:338)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:638)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:523)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4678)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5139)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:631)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:526)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:936)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:738)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+[2020-11-28 21:31:51] INFO : ContextLoader.java:271 - Root WebApplicationContext: initialization started
+[2020-11-28 21:31:51] INFO : SpringSecurityCoreVersion.java:75 - You are running with Spring Security Core 5.4.1
+[2020-11-28 21:31:51] INFO : SecurityNamespaceHandler.java:84 - Spring Security 'config' module version is 5.4.1
+[2020-11-28 21:31:52] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'permitAll' for /login/login
+[2020-11-28 21:31:52] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'hasRole('ROLE_MEMBER')' for /main/main
+[2020-11-28 21:31:52] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'hasRole('ROLE_ADMIN')' for /main/main
+[2020-11-28 21:31:52] WARN : FilterInvocationSecurityMetadataSourceParser.java:180 - Duplicate URL defined: /main/main. The original attribute values will be overwritten
+[2020-11-28 21:31:52] ERROR: ContextLoader.java:313 - Context initialization failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: The attribute error-page cannot be used together with the 'ref' attribute within <access-denied-handler>
+Offending resource: ServletContext resource [/WEB-INF/spring/security-context.xml]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:119)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:97)
+	at org.springframework.security.config.http.AuthenticationConfigBuilder.createAccessDeniedHandler(AuthenticationConfigBuilder.java:779)
+	at org.springframework.security.config.http.AuthenticationConfigBuilder.createExceptionTranslationFilter(AuthenticationConfigBuilder.java:760)
+	at org.springframework.security.config.http.AuthenticationConfigBuilder.<init>(AuthenticationConfigBuilder.java:246)
+	at org.springframework.security.config.http.HttpSecurityBeanDefinitionParser.createFilterChain(HttpSecurityBeanDefinitionParser.java:149)
+	at org.springframework.security.config.http.HttpSecurityBeanDefinitionParser.parse(HttpSecurityBeanDefinitionParser.java:120)
+	at org.springframework.security.config.SecurityNamespaceHandler.parse(SecurityNamespaceHandler.java:105)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1391)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1371)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:179)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:511)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:338)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:638)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:523)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4678)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5139)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:631)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:526)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:936)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:738)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+[2020-11-28 21:32:36] INFO : ContextLoader.java:271 - Root WebApplicationContext: initialization started
+[2020-11-28 21:32:36] INFO : SpringSecurityCoreVersion.java:75 - You are running with Spring Security Core 5.4.1
+[2020-11-28 21:32:36] INFO : SecurityNamespaceHandler.java:84 - Spring Security 'config' module version is 5.4.1
+[2020-11-28 21:32:37] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'permitAll' for /login/login
+[2020-11-28 21:32:37] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'hasRole('ROLE_MEMBER')' for /main/main
+[2020-11-28 21:32:37] INFO : FilterInvocationSecurityMetadataSourceParser.java:168 - Creating access control expression attribute 'hasRole('ROLE_ADMIN')' for /main/main
+[2020-11-28 21:32:37] WARN : FilterInvocationSecurityMetadataSourceParser.java:180 - Duplicate URL defined: /main/main. The original attribute values will be overwritten
+[2020-11-28 21:32:37] INFO : HttpSecurityBeanDefinitionParser.java:281 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.csrf.CsrfFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 800, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1400, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 2200, Root bean: class [org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2500, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2700, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2800, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2900]
+[2020-11-28 21:32:37] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.driverClassName]
+[2020-11-28 21:32:37] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.driverClassName] not found - trying original name [jdbc.driverClassName]. javax.naming.NameNotFoundException: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.
+[2020-11-28 21:32:37] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.driverClassName]
+[2020-11-28 21:32:37] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.driverClassName] threw NamingException with message: Name [jdbc.driverClassName]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.driverClassName]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 21:32:37] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+[2020-11-28 21:32:37] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.
+[2020-11-28 21:32:37] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.url]
+[2020-11-28 21:32:37] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.url]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 21:32:37] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+[2020-11-28 21:32:37] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.
+[2020-11-28 21:32:37] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.username]
+[2020-11-28 21:32:37] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.username]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 21:32:37] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+[2020-11-28 21:32:37] DEBUG: JndiLocatorSupport.java:102 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.
+[2020-11-28 21:32:37] DEBUG: JndiTemplate.java:155 - Looking up JNDI object with name [jdbc.password]
+[2020-11-28 21:32:37] DEBUG: JndiPropertySource.java:101 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password]은(는) 이 컨텍스트에 바인딩되지 않았습니다. [jdbc.password]을(를) 찾을 수 없습니다.. Returning null.
+[2020-11-28 21:32:37] DEBUG: UiApplicationContextUtils.java:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@1e1ea16d]
+[2020-11-28 21:32:37] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2020-11-28 21:32:37] DEBUG: LogFactory.java:105 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[2020-11-28 21:32:38] DEBUG: Logger.java:49 - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[2020-11-28 21:32:38] DEBUG: Logger.java:49 - Property 'mapperLocations' was not specified.
+[2020-11-28 21:32:38] WARN : AbstractApplicationContext.java:559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.filterChains': Cannot resolve reference to bean 'org.springframework.security.web.DefaultSecurityFilterChain#0' while setting bean property 'sourceList' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.DefaultSecurityFilterChain#0': Cannot create inner bean '(inner bean)#6c737fdb' of type [org.springframework.security.web.authentication.logout.LogoutFilter] while setting constructor argument with key [4]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6c737fdb': Cannot resolve reference to bean 'org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices#0' while setting constructor argument with key [2]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices#0': Cannot create inner bean '(inner bean)#560be8c0' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#560be8c0': Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.core.userdetails.UserDetailsService]: Factory method 'cachingUserDetailsService' threw exception; nested exception is org.springframework.context.ApplicationContextException: More than one UserDetailsService registered. Please use a specific Id reference in <remember-me/> <openid-login/> or <x509 /> elements.
+[2020-11-28 21:32:38] ERROR: ContextLoader.java:313 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.filterChains': Cannot resolve reference to bean 'org.springframework.security.web.DefaultSecurityFilterChain#0' while setting bean property 'sourceList' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.DefaultSecurityFilterChain#0': Cannot create inner bean '(inner bean)#6c737fdb' of type [org.springframework.security.web.authentication.logout.LogoutFilter] while setting constructor argument with key [4]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6c737fdb': Cannot resolve reference to bean 'org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices#0' while setting constructor argument with key [2]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices#0': Cannot create inner bean '(inner bean)#560be8c0' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#560be8c0': Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.core.userdetails.UserDetailsService]: Factory method 'cachingUserDetailsService' threw exception; nested exception is org.springframework.context.ApplicationContextException: More than one UserDetailsService registered. Please use a specific Id reference in <remember-me/> <openid-login/> or <x509 /> elements.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:428)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1697)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1442)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4678)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5139)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:631)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:526)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:936)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:738)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.DefaultSecurityFilterChain#0': Cannot create inner bean '(inner bean)#6c737fdb' of type [org.springframework.security.web.authentication.logout.LogoutFilter] while setting constructor argument with key [4]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6c737fdb': Cannot resolve reference to bean 'org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices#0' while setting constructor argument with key [2]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices#0': Cannot create inner bean '(inner bean)#560be8c0' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#560be8c0': Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.core.userdetails.UserDetailsService]: Factory method 'cachingUserDetailsService' threw exception; nested exception is org.springframework.context.ApplicationContextException: More than one UserDetailsService registered. Please use a specific Id reference in <remember-me/> <openid-login/> or <x509 /> elements.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:389)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:428)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:173)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:690)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:196)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 58 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6c737fdb': Cannot resolve reference to bean 'org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices#0' while setting constructor argument with key [2]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices#0': Cannot create inner bean '(inner bean)#560be8c0' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#560be8c0': Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.core.userdetails.UserDetailsService]: Factory method 'cachingUserDetailsService' threw exception; nested exception is org.springframework.context.ApplicationContextException: More than one UserDetailsService registered. Please use a specific Id reference in <remember-me/> <openid-login/> or <x509 /> elements.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:428)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:173)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:690)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:196)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374)
+	... 72 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices#0': Cannot create inner bean '(inner bean)#560be8c0' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#560be8c0': Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.core.userdetails.UserDetailsService]: Factory method 'cachingUserDetailsService' threw exception; nested exception is org.springframework.context.ApplicationContextException: More than one UserDetailsService registered. Please use a specific Id reference in <remember-me/> <openid-login/> or <x509 /> elements.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:389)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:704)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:196)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 82 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#560be8c0': Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.core.userdetails.UserDetailsService]: Factory method 'cachingUserDetailsService' threw exception; nested exception is org.springframework.context.ApplicationContextException: More than one UserDetailsService registered. Please use a specific Id reference in <remember-me/> <openid-login/> or <x509 /> elements.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374)
+	... 94 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.core.userdetails.UserDetailsService]: Factory method 'cachingUserDetailsService' threw exception; nested exception is org.springframework.context.ApplicationContextException: More than one UserDetailsService registered. Please use a specific Id reference in <remember-me/> <openid-login/> or <x509 /> elements.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 100 more
+Caused by: org.springframework.context.ApplicationContextException: More than one UserDetailsService registered. Please use a specific Id reference in <remember-me/> <openid-login/> or <x509 /> elements.
+	at org.springframework.security.config.http.UserDetailsServiceFactoryBean.getUserDetailsService(UserDetailsServiceFactoryBean.java:111)
+	at org.springframework.security.config.http.UserDetailsServiceFactoryBean.cachingUserDetailsService(UserDetailsServiceFactoryBean.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 101 more

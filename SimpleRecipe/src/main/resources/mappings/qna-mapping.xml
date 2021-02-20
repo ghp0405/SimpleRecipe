@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="QnADAO">
+
+	<resultMap type="qna" id="qnaResult">
+		<id property="qnaTbNo" column="QNA_TB_NO" />
+		<result property="qnaTbTitle" column="QNA_TB_TITLE" />
+		<result property="userTbId" column="USER_TB_ID" />
+		<result property="qnaTbContent" column="QNA_TB_CONTENT" />
+		<result property="qnaTbRegDate" column="QNA_TB_REG_DATE" />
+	</resultMap>
+	
+	<insert id="insertQnA" parameterType="qna">
+		<![CDATA[
+			INSERT INTO QNA(QNA_TB_NO, QNA_TB_TITLE, 
+				USER_TB_ID, QNA_TB_CONTENT, QNA_TB_REG_DATE)
+			VALUES(SEQ_QNA_TB_NO.NEXTVAL, #{qnaTbTitle},
+				#{userTbId}, #{qnaTbContent}, sysdate)
+		]]>
+	</insert>
+	
+	<update id="updateQnA" parameterType="qna">
+		<![CDATA[
+			UPDATE QNA 
+			SET QNA_TB_TITLE = #{qnaTbTitle},
+				QNA_TB_CONTENT = #{qnaTbContent}
+			WHERE QNA_TB_NO = #{qnaTbNo}
+		]]>
+	</update>
+	
+	<delete id="deleteQnA" parameterType="qna">
+		<![CDATA[
+			DELETE FROM QNA
+			WHERE QNA_TB_NO = #{qnaTbNo}
+		]]>
+	</delete>
+	
+	<select id="getQnA" resultMap="qnaResult"
+		parameterType="qna">
+		<![CDATA[
+			SELECT QNA_TB_NO, QNA_TB_TITLE, 
+				USER_TB_ID, QNA_TB_CONTENT, QNA_TB_REG_DATE
+			FROM QNA
+			WHERE QNA_TB_NO = #{qnaTbNo}
+		]]>	
+	</select>
+	
+	<select id="getQnAList" resultMap="qnaResult" 
+		parameterType="qna">
+			SELECT QNA_TB_NO, QNA_TB_TITLE, 
+				USER_TB_ID, QNA_TB_CONTENT, QNA_TB_REG_DATE
+			FROM QNA
+			ORDER BY QNA_TB_NO DESC
+	</select>
+
+</mapper>
