@@ -52,11 +52,38 @@ a:hover { text-decoration: none; }
 .paging-wrap ul {
 	list-style: none;
 	display: inline-block;
+	padding: 0;
 }
 
 .paging-wrap ul li {
 	float: left;
-	margin-left: 10px;
+	display: block;
+	background-color: #242f46;
+	width: 16px;
+	height: 16px;
+	padding: 8px;
+	margin-left: 8px;
+	margin-bottom: 4px;
+	border-radius: 16px;
+}
+
+.paging-wrap ul .visit_page {
+	background-color: #fff;
+	border: 2px solid #242f46;
+	width: 12px;
+	height: 12px;
+}
+
+.paging-wrap ul li a {
+	color: #fff;
+	position: relative;
+	top: -4px;
+	font-weight: bold;
+}
+
+.paging-wrap ul .visit_page a {
+	color: #242f46;
+	top: -6px;
 }
 
 .txt-c {

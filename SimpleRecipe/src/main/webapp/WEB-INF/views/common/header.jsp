@@ -14,6 +14,7 @@
 		<c:choose>
 			<c:when test="${userType == '일반사용자'}">
 				<div class="nav-wrap">
+					<a href="/main/main" class="logo">Simple Recipe</a>
 					<ul>
 						<li><a href="/login/logout">로그아웃</a></li>
 						<li><a href="/main/main">메인페이지</a></li>
@@ -22,8 +23,7 @@
 						<li><a href="/board/getQnAList">Q&A</a></li>
 					</ul>
 				</div>
-				<h2>SimpleRecipe</h2>
-				<h2>${userLogin.userTbId}님 방문을 환영합니다.</h2>
+				<h2>${userLogin.userTbId}님 방문을 환영합니다</h2>
 			</c:when>
 			<c:when test="${userType == '관리자'}">
 				<div class="nav-wrap">
@@ -35,11 +35,11 @@
 						<li><a href="/board/getQnAList">Q&A</a></li>
 					</ul>
 				</div>
-				<h2>SimpleRecipe</h2>
-				<h2>${adminLogin.adminTbId}님 방문을 환영합니다.</h2>
+				<h2>${adminLogin.adminTbId}님 방문을 환영합니다</h2>
 			</c:when>
 			<c:otherwise>
 				<div class="nav-wrap">
+					<a href="/main/main" class="logo">Simple Recipe</a>
 					<ul>
 						<li><a href="/login/login">로그인</a></li>
 						<li><a href="/login/register">회원가입</a></li>
@@ -48,7 +48,7 @@
 						<li><a href="/board/getQnAList">Q&A</a></li>
 					</ul>
 				</div>
-				<h2>SimpleRecipe</h2>
+				<h2></h2>
 			</c:otherwise>
 		</c:choose>
 	</div><%-- end header-wrap --%>

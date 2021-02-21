@@ -4,60 +4,61 @@ body{
 	background-color: #f9f9f9;
 }
 
-h1 {
+.update-form-wrap {
+	overflow: hidden;
+	width: 900px;
+	height: auto;
+	margin: 20px auto 0 auto;
+	/* background: #242f46; */
+	/* box-shadow: 3px 3px 14px 3px rgba(0,0,0,0.3); */
+	padding: 30px 50px;
+	box-sizing: border-box;
+}
+
+.update-form-wrap table {
+	border: 2px solid black; /* #ff9f40 */
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+.update-form-wrap .input-smarteditor {
+	background-color: #fff;
+}
+
+.update-form-wrap h1 {
 	color: #ff9f40;
 	font-size: 40px;
 	text-align: center;
 	font-weight: 600;
 }
 
-h2 {
+.update-form-wrap h2 {
 	color: #fff;
 	font-size: 28px;
 	text-align: center;
-	text-shadow: 1px 1px 2px #000;
+	/* text-shadow: 1px 1px 2px #000; */
 }
 
-p {
+.update-form-wrap p {
 	color: #ff9f40;
 	text-align: center;
 	font-size: 22px;
 	margin-top: 80px;
 }
 
-td, th {
-	color: #fff;
-	border: 1px solid #ff9f40;
+.update-form-wrap td, .update-form-wrap th {
+	color: #333;
+	border: 1px solid black; /* #ff9f40 */
 }
 
-th {
+.update-form-wrap th {
 	width: 120px;
 }
 
-.commonBtn {
-	margin: 0;
+.update-form-wrap .commonBtn {
+	margin-top: 20px;
 	padding: 4px 7px;
 	font-size: 16px;
-}
-
-.update-form-wrap {
-	overflow: hidden;
-	width: 900px;
-	height: auto;
-	margin: 20px auto 0 auto;
-	background: #242f46;
-	box-shadow: 3px 3px 14px 3px rgba(0,0,0,0.3);
-	padding: 30px 50px;
-	box-sizing: border-box;
-}
-
-.update-form-wrap table {
-	border: 1px solid #ff9f40;
-	margin: 0 auto;
-}
-
-.update-form-wrap .input-smarteditor {
-	background-color: #fff;
 }
 
 

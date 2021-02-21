@@ -4,45 +4,102 @@ body{
 	background-color: #f9f9f9;
 }
 .main-wrap {
-	width: 900px;
-	height: 300px;
-	margin: 20px auto 0 auto;
-	background: #242f46;
-	box-shadow: 3px 3px 14px 3px rgba(0,0,0,0.3);
-	padding: 30px 100px;
-	box-sizing: border-box;
+	max-width: 100%;
+	height: 500px;
+	position: relative;
+}
+/* carousel slider */
+.owl-carousel {
+	max-width: 1000px;
+	height: 500px;
+	margin: 0 auto;
+}
+.owl-carousel .owl-stage {
+	height: 500px;
+}
+.owl-carousel .owl-stage .owl-item {
+	height: 500px;
+}
+.owl-carousel .owl-stage .owl-item img {
+	height: 500px;
 }
 
-h1 {
-	color: #ff9f40;
+.main-wrap .form-wrap {
+	position: absolute;
+	top: 100px;
+	left:50%;
+	transform: translateX(-50%);
+	z-index: 9999;
+}
+.main-wrap .form-wrap h1 {
+	color: #fff; /* #ff9f40 */
 	font-size: 40px;
 	text-align: center;
 	font-weight: 600;
 }
 
-h2 {
-	color: #fff;
+.main-wrap .form-wrap h2 {
+	color: #333;
 	font-size: 28px;
 	text-align: center;
-	text-shadow: 1px 1px 2px #000;
+	margin-top: 20px;
+	/* text-shadow: 1px 1px 2px #000; */
 }
 
-p {
+.main-wrap .form-wrap p {
 	color: #ff9f40;
 	text-align: center;
 	font-size: 22px;
 	margin-top: 80px;
 }
 
-.form-wrap .inputTxt {
-	width: 100%;
-	height: 40px;
+
+.main-wrap .form-wrap .inputTxt {
+	display: block;
+	min-width: 500px;
+	padding-left: 20px;
+	height: 50px;
+	line-height: 50px;
 	outline: none;
-	font-size: 18px;
-	padding-left: 12px;
+	font-size: 16px;
+	margin: 30px auto;
 	box-sizing: border-box;
 	background-color: #fff;
-	border-bottom: 1px solid #ff9f40;
+	/* border-bottom: 1px solid #ff9f40; */
+	border-radius: 50px;
+}
+.main-wrap .form-wrap .inputTxt:focus {
+	border: 3px solid #ff940f;
 }
 
+
+.main-wrap .form-wrap .commonBtn {
+	/* 버튼 효과를 없앤다. */
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: 600;
+	min-width: 140px;
+	transition-duration: 0.52s;
+}
+.main-wrap .form-wrap .commonBtn:hover {
+	background-color: #ff940f;
+	border: 2px solid #ff940f;
+}
+.owl-dot {
+	margin-top: 20px;
+}
+.owl-dot span {
+	background-color: #ff940f !important;
+	opacity: 0.4 !important;
+}
+.owl-dot.active span {
+	width: 80px !important;
+	background-color: #ff940f !important;
+	opacity: 1 !important;
+}
 

@@ -11,14 +11,20 @@
 <div class="insert-form-wrap">
 	<form action="/main/insert" method="post" id="recipeSaveForm"
 		encType="multipart/form-data" accept-charset="UTF-8">
-		<input type="file" name="imgFile" placeholder="레시피 이미지를 삽입해주세요."/><br />
-		<input type="text" name="recipeTbTitle" placeholder="레시피 제목을 입력해주세요." /><br />
+		<div class="file_input">
+			<input type="text" readonly="readonly" id="file_route" >
+			<label>
+				<input type="file" name="imgFile" 
+					onchange="javascript:document.getElementById('file_route').value=this.value"/>
+			</label>
+		</div>
+		<input type="text" name="recipeTbTitle" class="recipeTbTitle" placeholder="레시피 제목을 입력해주세요." /><br />
 		<input type="button" id="addIngreBtn" value="재료 추가" /><br />
 		<div id="addIngreWrap">
 			<div id="addIngre">
-				<input type="text" name="ingredientTbName" 
+				<input type="text" name="ingredientTbName" class="ingredientTbName"
 				placeholder="재료를 입력해주세요." />
-				<input type="text" name="addIngDetail" 
+				<input type="text" name="addIngDetail" class="addIngDetail"
 				placeholder="추가 옵션 및 설명을 입력해주세요." />
 				<input type="button" id="delIngreBtn" value="재료 삭제" /><br />
 			</div>
@@ -38,7 +44,7 @@ $(document).ready(function(){
 		console.log("재료 삽입 버튼 클릭");
 		// before, after, clone 등의 함수는 오류 및 인식 안되는 경우가 많아 사용을 지양해야함
 		// 태그를 붙일 때는 반드시 더미 div를 만들고 append 및 prepend 등을 이용하여 삽입해야함
-		$('#addIngreWrap').append("<div id='addIngre'><input type='text' name='ingredientTbName' placeholder='재료를 입력해주세요.' /> <input type='text' name='addIngDetail' placeholder='추가 옵션 및 설명을 입력해주세요.' /> <input type='button' id='delIngreBtn' value='재료 삭제' /><br /></div>");
+		$('#addIngreWrap').append("<div id='addIngre'><input type='text' name='ingredientTbName' class='ingredientTbName' placeholder='재료를 입력해주세요.' /> <input type='text' name='addIngDetail' class='addIngDetail' placeholder='추가 옵션 및 설명을 입력해주세요.' /> <input type='button' id='delIngreBtn' value='재료 삭제' /><br /></div>");
 	});
 
 	// 위처럼 append 등을 이용한 삽입 함수로 생성된 동적 태그들은

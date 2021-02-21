@@ -11,7 +11,7 @@
 <body>
 <div id="footer">
 	<div class="footer-wrap">
-		<h2>footer</h2>
+		<h2>ⓒ Copyright SimpleRecipe. All Rights Reserved</h2>
 	</div><%-- end footer-wrap --%>
 </div><%-- end footer --%>
 </body>

@@ -29,7 +29,14 @@
 			<li><a href="/main/result${pageMaker.makeQuery(pageMaker.startPage - 1)}&keywords=${keywords}"><</a></li>
 		</c:if>
 		<c:forEach begin="${pageMaker.startPage}" end="${pageMaker.endPage}" var="idx">
-			<li><a href="/main/result${pageMaker.makeQuery(idx)}&keywords=${keywords}">${idx}</a></li>
+			<c:choose>
+				<c:when test="${pageMaker.cri.page eq idx}">
+					<li class="visit_page"><a href="/main/result${pageMaker.makeQuery(idx)}&keywords=${keywords}">${idx}</a></li>
+				</c:when>
+				<c:otherwise>
+					<li><a href="/main/result${pageMaker.makeQuery(idx)}&keywords=${keywords}">${idx}</a></li>
+				</c:otherwise>
+			</c:choose>
 		</c:forEach>
 		<c:if test="${pageMaker.next && pageMaker.endPage > 0}">
 			<li><a href="/main/result${pageMaker.makeQuery(pageMaker.endPage + 1)}&keywords=${keywords}">></a></li>
