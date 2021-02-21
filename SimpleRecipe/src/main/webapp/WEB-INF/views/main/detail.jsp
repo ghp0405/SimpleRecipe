@@ -13,7 +13,7 @@
 <body>
 <div class="detail-wrap">
 	<img src="<c:url value="${recipe.recipeTbImageLink}" />" 
-		style="width: 500px; height: 500px; display: block; margin: 0 auto;" /><br />
+		style="width: 700px; height: 700px; display: block; margin: 0 auto;" /><br />
 	<c:set var="lineSorter" value="0" scope="page" /> 
 	<c:forEach var="line" items="${content}">
 		<c:choose>

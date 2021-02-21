@@ -77,15 +77,7 @@
 			<li><a href="/admin/getUserList${pageMaker.makeQuery(pageMaker.startPage - 1)}"><</a></li>
 		</c:if>
 		<c:forEach begin="${pageMaker.startPage}" end="${pageMaker.endPage}" var="idx">
-			<c:choose>
-				<c:when test="${pageMaker.cri.page eq idx}">
-					<li class="visit_page"><a href="/admin/getUserList${pageMaker.makeQuery(idx)}">${idx}</a></li>
-				</c:when>
-				<c:otherwise>
-					<li><a href="/admin/getUserList${pageMaker.makeQuery(idx)}">${idx}</a></li>
-				</c:otherwise>
-			</c:choose>
-			
+			<li><a href="/admin/getUserList${pageMaker.makeQuery(idx)}">${idx}</a></li>
 		</c:forEach>
 		<c:if test="${pageMaker.next && pageMaker.endPage > 0}">
 			<li><a href="/admin/getUserList${pageMaker.makeQuery(pageMaker.endPage + 1)}">></a></li>

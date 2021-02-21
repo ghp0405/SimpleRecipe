@@ -11,10 +11,11 @@
 </head>
 <body>
 <div class="mypage-wrap">
+	<h2>마이페이지 입니다.</h2>
 	<a href="/main/insert"><button class="commonBtn">레시피 등록</button></a>
 	<%-- 여기에 자기가 등록한 레시피들의 목록이 나타나야한다. 
 	또한, 레시피에 대한 내용 보기 및 수정, 삭제도 가능해야한다. --%>
-	<h2>Your favorite recipe</h2>	
+	<h2>${userTbId}님이 작성한 레시피 목록</h2>	
 	<c:forEach var="myRecipe" items="${myRecipeList}">
 		<div class="recipe-wrap">
 			<a href="/main/detail?recipeTbNo=${myRecipe.recipeTbNo}">

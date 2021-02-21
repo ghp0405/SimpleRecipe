@@ -32,7 +32,7 @@
 			</tr>
 		</table>
 		<button type="submit" id="EditorSaveBtn" class="commonBtn">공지 등록</button>
-		<a href="/board/getNoticeList"><button type="button" class="commonBtn">돌아가기</button></a>
+		<a href="/board/getNoticeList"><button class="commonBtn">돌아가기</button></a>
 	</form>
 </div>
 </body>

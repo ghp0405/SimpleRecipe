@@ -13,7 +13,7 @@
 <body>
 	<div class="login-wrap">
 		<h2>Log-in</h2>
-		<p>Welcome to <strong>'SIMPLE RECIPE'</strong></p>
+		<p>Welcome to SIMPLE RECIPE</p>
 		<form action="/login/loginCheck" method="POST">
 			<!-- <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" /> -->
 			<div class="login-div login-id-wrap">

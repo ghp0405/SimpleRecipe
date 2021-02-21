@@ -4,93 +4,61 @@ body{
 	background-color: #f9f9f9;
 }
 
-.update-form-wrap {
-	overflow: hidden;
-	width: 900px;
-	height: auto;
-	margin: 20px auto 0 auto;
-	/* background: #242f46; */
-	/* box-shadow: 3px 3px 14px 3px rgba(0,0,0,0.3); */
-	padding: 30px 50px;
-	box-sizing: border-box;
-}
-
-.update-form-wrap .input-smarteditor {
-	background-color: #fff;
-}
-
-.update-form-wrap h1 {
+h1 {
 	color: #ff9f40;
 	font-size: 40px;
 	text-align: center;
 	font-weight: 600;
 }
 
-.update-form-wrap h2 {
-	color: #333;
+h2 {
+	color: #fff;
 	font-size: 28px;
 	text-align: center;
 	text-shadow: 1px 1px 2px #000;
 }
 
-.update-form-wrap p {
+p {
 	color: #ff9f40;
 	text-align: center;
 	font-size: 22px;
 	margin-top: 80px;
 }
 
-.update-form-wrap input[type="file"] {
-	vertical-align: middle; 
-	display: inline-block; 
+td, th {
+	color: #fff;
+	border: 1px solid #ff9f40;
+}
+
+th {
+	width: 120px;
+}
+
+.commonBtn {
+	margin: 0;
+	padding: 4px 7px;
+	font-size: 16px;
+}
+
+.update-form-wrap {
 	overflow: hidden;
-	width: 80px;
-	margin: 0;
-	padding: 4px 7px;
-	font-size: 16px;
-	border-radius: 5px;
+	width: 900px;
+	height: auto;
+	margin: 20px auto 0 auto;
+	background: #242f46;
+	box-shadow: 3px 3px 14px 3px rgba(0,0,0,0.3);
+	padding: 30px 50px;
+	box-sizing: border-box;
+}
+
+.update-form-wrap table {
+	border: 1px solid #ff9f40;
+	margin: 0 auto;
+}
+
+.update-form-wrap .input-smarteditor {
 	background-color: #fff;
 }
-
-.update-form-wrap #file_route {
-	height: 20px;
-	vertical-align: middle;
-}
-
-.update-form-wrap .recipeTbTitle {
-	width: calc(100% - 10px);
-	margin-bottom: 10px;
-}
-
-.update-form-wrap #addIngreBtn, 
-.update-form-wrap #delIngreBtn,
-.update-form-wrap #EditorSaveBtn {
-	margin: 0;
-	padding: 4px 7px;
-	font-size: 16px;
-	background-color: #fff;
-	border-radius: 5px;
-}
-
-.update-form-wrap #EditorSaveBtn {
-	margin-top: 20px;
-}
-
-.update-form-wrap #addIngre {
-	margin: 10px 0;
-}
-
-.update-form-wrap .ingredientTbName,
-.update-form-wrap .addIngDetail {
-	height: 26px;
-	vertical-align: top;
-	padding-top: 2px;
-}
-
-.update-form-wrap .addIngDetail {
-	width: calc(100% - 280px);
-}
-
 
 
 
