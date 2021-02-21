@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body{
+	background-color: #f9f9f9;
+}
+.result-wrap {
+	overflow: hidden;
+	width: 900px;
+	height: auto;
+	margin: 0 auto;
+	/* background: #242f46; */
+	/* box-shadow: 3px 3px 14px 3px rgba(0,0,0,0.3);*/
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.result-wrap h1 {
+	color: #ff9f40;
+	font-size: 40px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.result-wrap h2 {
+	color: #333;
+	font-size: 28px;
+	text-align: center;
+	/* text-shadow: 1px 1px 2px #000; */
+}
+
+.result-wrap p {
+	color: #ff9f40;
+	text-align: center;
+	font-size: 22px;
+	margin-top: 80px;
+}
+
+.recipe-wrap {
+	float: left;
+	width: 200px;
+	height: 300px;
+	padding: 0 9px;
+}
+
+.recipe-wrap .recipe-title {
+	word-break: break-all; /* 텍스트 자동 개행 */
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+
+

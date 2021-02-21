@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/views/common/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+		<put-attribute name="side" value="/WEB-INF/views/common/side.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+	</definition>
+	
+	<definition name="/main/main" extends="baseLayout">
+		<put-attribute name="title" value="메인 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/main.jsp" />
+	</definition>
+	
+	<definition name="/main/result" extends="baseLayout">
+		<put-attribute name="title" value="검색 결과 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/result.jsp" />
+	</definition>
+	
+	<definition name="/main/detail" extends="baseLayout">
+		<put-attribute name="title" value="레시피 상세 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/detail.jsp" />
+	</definition>
+	
+	<definition name="/main/insert" extends="baseLayout">
+		<put-attribute name="title" value="레시피 등록 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/insert.jsp" />
+	</definition>
+	
+	<definition name="/main/update" extends="baseLayout">
+		<put-attribute name="title" value="레시피 수정 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/update.jsp" />
+	</definition>
+	
+	<definition name="/admin/getUserList" extends="baseLayout">
+		<put-attribute name="title" value="사용자 목록 보기 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/admin/getUserList.jsp" />
+	</definition>
+	
+	<definition name="/board/getNotice" extends="baseLayout">
+		<put-attribute name="title" value="공지사항 내용 보기 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/board/getNotice.jsp" />
+	</definition>
+	
+	<definition name="/board/getNoticeList" extends="baseLayout">
+		<put-attribute name="title" value="공지사항 목록 보기 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/board/getNoticeList.jsp" />
+	</definition>
+	
+	<definition name="/board/insertNotice" extends="baseLayout">
+		<put-attribute name="title" value="공지사항 삽입 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/board/insertNotice.jsp" />
+	</definition>
+	
+	<definition name="/board/updateNotice" extends="baseLayout">
+		<put-attribute name="title" value="공지사항 수정 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/board/updateNotice.jsp" />
+	</definition>
+	
+	<definition name="/board/getQnA" extends="baseLayout">
+		<put-attribute name="title" value="QnA 내용 보기 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/board/getQnA.jsp" />
+	</definition>
+	
+	<definition name="/board/getQnAList" extends="baseLayout">
+		<put-attribute name="title" value="QnA 목록 보기 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/board/getQnAList.jsp" />
+	</definition>
+	
+	<definition name="/board/insertQnA" extends="baseLayout">
+		<put-attribute name="title" value="QnA 삽입 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/board/insertQnA.jsp" />
+	</definition>
+	
+	<definition name="/board/updateQnA" extends="baseLayout">
+		<put-attribute name="title" value="QnA 수정 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/board/updateQnA.jsp" />
+	</definition>
+	
+	<definition name="/main/mypage" extends="baseLayout">
+		<put-attribute name="title" value="마이페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/mypage.jsp" />
+	</definition>
+	
+</tiles-definitions>
