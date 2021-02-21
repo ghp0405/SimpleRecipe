@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="NoticeDAO">
+
+	<resultMap type="notice" id="noticeResult">
+		<id property="noticeTbNo" column="NOTICE_TB_NO" />
+		<result property="noticeTbTitle" column="NOTICE_TB_TITLE" />
+		<result property="adminTbId" column="ADMIN_TB_ID" />
+		<result property="noticeTbContent" column="NOTICE_TB_CONTENT" />
+		<result property="noticeTbRegDate" column="NOTICE_TB_REG_DATE" />
+	</resultMap>
+	
+	<insert id="insertNotice" parameterType="notice">
+		<![CDATA[
+			INSERT INTO NOTICE(NOTICE_TB_NO, NOTICE_TB_TITLE, 
+				ADMIN_TB_ID, NOTICE_TB_CONTENT, NOTICE_TB_REG_DATE)
+			VALUES(SEQ_NOTICE_TB_NO.NEXTVAL, #{noticeTbTitle},
+				#{adminTbId}, #{noticeTbContent}, sysdate)
+		]]>
+	</insert>
+	
+	<update id="updateNotice" parameterType="notice">
+		<![CDATA[
+			UPDATE NOTICE 
+			SET NOTICE_TB_TITLE = #{noticeTbTitle},
+				NOTICE_TB_CONTENT = #{noticeTbContent}
+			WHERE NOTICE_TB_NO = #{noticeTbNo}
+		]]>
+	</update>
+	
+	<delete id="deleteNotice" parameterType="notice">
+		<![CDATA[
+			DELETE FROM NOTICE
+			WHERE NOTICE_TB_NO = #{noticeTbNo}
+		]]>
+	</delete>
+	
+	<select id="getNotice" resultMap="noticeResult"
+		parameterType="notice">
+		<![CDATA[
+			SELECT NOTICE_TB_NO, NOTICE_TB_TITLE, 
+				ADMIN_TB_ID, NOTICE_TB_CONTENT, NOTICE_TB_REG_DATE
+			FROM NOTICE
+			WHERE NOTICE_TB_NO = #{noticeTbNo}
+		]]>	
+	</select>
+	
+	<select id="getNoticeList" resultMap="noticeResult" 
+		parameterType="notice">
+			SELECT NOTICE_TB_NO, NOTICE_TB_TITLE, 
+				ADMIN_TB_ID, NOTICE_TB_CONTENT, NOTICE_TB_REG_DATE
+			FROM NOTICE
+			ORDER BY NOTICE_TB_NO DESC
+	</select>
+
+</mapper>
